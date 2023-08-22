@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "gems_mod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Gems Mod",
+  "description": "Enriches your world with more diamond like ores.",
   "authors": [
-    "Turnip Labs"
+    "Turnip Labs",
+	"dotBlueShoes"
   ],
   "contact": {
     "homepage": "",
@@ -18,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "turniplabs.examplemod.ExampleMod"
+	  "dotBlueShoes.GemsMod.GemsMod"
     ]
   },
   "mixins": [
-      "examplemod.mixins.json"
+      "gems_mod.mixins.json"
   ],
 
   "depends": {
