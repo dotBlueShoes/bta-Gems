@@ -18,9 +18,15 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
+	"main": [
 	  "dotBlueShoes.GemsMod.GemsMod"
-    ]
+	],
+	"client": [
+	  "dotBlueShoes.GemsMod.GemsModClient"
+	],
+	"server": [
+	  "dotBlueShoes.GemsMod.GemsModServer"
+	]
   },
   "mixins": [
       "gems_mod.mixins.json"
