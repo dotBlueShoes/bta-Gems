@@ -1,12 +1,15 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "dotBlueShoes.GemsMod.mixin",
+    "package": "dotBlueShoes.GemsMod.mixin.mixins",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
     ],
     "client": [
-	  "RenderEngineAccessor"
+	  "RenderEngineMixin",
+	  "ItemRendererMixin",
+	  "GuiRenderItemMixin",
+	  "ItemEntityRendererMixin"
     ],
     "injectors": {
         "defaultRequire": 1
