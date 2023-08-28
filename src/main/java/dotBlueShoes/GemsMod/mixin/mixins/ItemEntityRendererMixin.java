@@ -16,6 +16,7 @@ import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.tag.ItemTags;
 import net.minecraft.core.util.helper.MathHelper;
 import org.lwjgl.opengl.GL11;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -38,10 +39,10 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 	//  get a different texture for it.
 	//  see if it works here.
 
-	@Shadow
-	public Random random;
-	@Shadow
-	public RenderBlocks renderBlocks;
+	@Shadow @Final
+	private Random random;
+	@Shadow @Final
+	private RenderBlocks renderBlocks;
 	@Shadow
 	public boolean field_27004_a;
 	@Shadow
@@ -49,7 +50,8 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 
 
 	@Inject(
-		method = "doRenderItem(Lnet/minecraft/core/entity/Entity;DDDFF)V",
+		//method = "doRenderItem(Lnet/minecraft/core/entity/Entity;DDDFF)V",
+		method = "doRenderItem",
 		at = @At(
 			value = "HEAD"
 		),
@@ -133,7 +135,9 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 			} else {
 				if (itemstack.itemID == 17001) {
 					//LOGGER.info("Got My Item!");
-					String spriteAtlas = "assets/" + dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
+
+					String spriteAtlas = "/assets/" + dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
+					//String spriteAtlas = dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
 
 					RenderEngine renderEngine = this.renderDispatcher.renderEngine;
 					int texture = RenderEngineHelper.getCustomTexture(renderEngine, spriteAtlas);

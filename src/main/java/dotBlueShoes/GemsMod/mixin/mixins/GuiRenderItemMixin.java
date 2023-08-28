@@ -24,13 +24,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class GuiRenderItemMixin extends Gui {
 
 	@Shadow
-	public static ItemEntityRenderer itemRenderer;
+	static ItemEntityRenderer itemRenderer;
 	@Shadow
-	public Minecraft mc;
+	Minecraft mc;
 
 
 	@Inject(
-		method = "render()V",
+		method = "render(Lnet/minecraft/core/item/ItemStack;IIZLnet/minecraft/core/player/inventory/slot/Slot;)V",
 		at = @At(
 			value = "HEAD"
 		),

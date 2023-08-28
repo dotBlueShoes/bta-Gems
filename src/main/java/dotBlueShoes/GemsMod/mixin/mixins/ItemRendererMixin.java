@@ -27,9 +27,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ItemRendererMixin {
 
 	@Shadow
-	public RenderBlocks renderBlocksInstance;
+	private RenderBlocks renderBlocksInstance;
 	@Shadow
-	public Minecraft mc;
+	private Minecraft mc;
 
 
 	//@Inject(method = "renderItem", at = @At("HEAD"), cancellable = true, remap = false)

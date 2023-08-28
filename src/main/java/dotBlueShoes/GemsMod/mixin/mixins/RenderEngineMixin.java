@@ -12,6 +12,7 @@ import net.minecraft.client.render.texturepack.TexturePackList;
 
 import org.lwjgl.opengl.GL11;
 
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -28,10 +29,11 @@ import static dotBlueShoes.GemsMod.GemsModClient.LOGGER;
 public abstract class RenderEngineMixin {
 
 	@Shadow
-	public Map<String, Integer> textureMap;
+	private Map<String, Integer> textureMap;
 	@Shadow
-	public List<DynamicTexture> dynamicTextures;
-	@Shadow
+	private List<DynamicTexture> dynamicTextures;
+
+	@Shadow @Final
 	public Minecraft minecraft;
 	@Shadow
 	public TexturePackList texturePacks;
@@ -40,7 +42,9 @@ public abstract class RenderEngineMixin {
 
 	@Inject(method = "initDynamicTextures", at = @At("TAIL"), remap = false)
 	public void initDynamicTextures(CallbackInfo ci) {
-		String spriteAtlas = "assets/" + Global.MOD_ID + "/" + Global.TILEMAP_GEMS_IMAGE;
+
+		String spriteAtlas = "/assets/" + Global.MOD_ID + "/" + Global.TILEMAP_GEMS_IMAGE;
+		//String spriteAtlas = Global.MOD_ID + "/" + Global.TILEMAP_GEMS_IMAGE;
 
 		// I believe we're loading a texture only to read its size for now.
 		GL11.glBindTexture(Global.OPENGL_VERSION, RenderEngineHelper.getCustomTexture((RenderEngine)(Object)this, spriteAtlas));
