@@ -39,6 +39,11 @@ public class GemsMod implements ModInitializer {
 		//	LOGGER.info("GOT MC!");
 		//}
 
+		// TODO:
+		// 1. Initialize TextureAtlases
+		// 2. Separate Get/Init in RenderEngineHelper
+		// 3. TextureAtlases not final so its resolution can be changed by texturePacks.
+
 		Blocks.onInitialize();
 		Items.onInitialize();
 
