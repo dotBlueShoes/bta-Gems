@@ -26,9 +26,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ItemRenderer.class)
 public abstract class ItemRendererMixin {
 
-	@Shadow
+	@Shadow(remap = false)
 	private RenderBlocks renderBlocksInstance;
-	@Shadow
+	@Shadow(remap = false)
 	private Minecraft mc;
 
 

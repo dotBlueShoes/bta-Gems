@@ -23,9 +23,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(GuiRenderItem.class)
 public abstract class GuiRenderItemMixin extends Gui {
 
-	@Shadow
+	@Shadow(remap = false)
 	static ItemEntityRenderer itemRenderer;
-	@Shadow
+	@Shadow(remap = false)
 	Minecraft mc;
 
 

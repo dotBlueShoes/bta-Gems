@@ -1,5 +1,6 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
+import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.util.RenderEngineHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.*;
@@ -8,7 +9,6 @@ import net.minecraft.client.render.block.model.BlockModelDispatcher;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.ItemEntityRenderer;
-import net.minecraft.core.Global;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.item.Item;
@@ -26,6 +26,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Random;
 
 import static dotBlueShoes.GemsMod.GemsModClient.LOGGER;
+import static net.minecraft.core.Global.TEXTURE_ATLAS_WIDTH_TILES;
 
 // ABOUT
 //  - Renders items on ground.
@@ -39,13 +40,13 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 	//  get a different texture for it.
 	//  see if it works here.
 
-	@Shadow @Final
+	@Shadow(remap = false) @Final
 	private Random random;
-	@Shadow @Final
+	@Shadow(remap = false) @Final
 	private RenderBlocks renderBlocks;
-	@Shadow
+	@Shadow(remap = false)
 	public boolean field_27004_a;
-	@Shadow
+	@Shadow(remap = false)
 	public abstract void renderTexturedQuad(int l, int i1, int i, int i2, int tileWidth, int tileWidth1);
 
 
@@ -136,34 +137,34 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 				if (itemstack.itemID == 17001) {
 					//LOGGER.info("Got My Item!");
 
-					String spriteAtlas = "/assets/" + dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
+					//String spriteAtlas = "/assets/" + dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
 					//String spriteAtlas = dotBlueShoes.GemsMod.Global.MOD_ID + "/" + dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_IMAGE;
 
 					RenderEngine renderEngine = this.renderDispatcher.renderEngine;
-					int texture = RenderEngineHelper.getCustomTexture(renderEngine, spriteAtlas);
+					int texture = RenderEngineHelper.getCustomTexture(renderEngine, Global.atlasGems.getName());
 					//int texture = (RenderEngineMixin)renderEngine.getCustomTexture(spriteAtlas);
 					renderEngine.bindTexture(texture);
 
 					//this.loadTexture(spriteAtlas);
 
-					tileWidth = 16; // FIXIT!!!
+					tileWidth = Global.atlasGems.resolution;
 					// (0 % 10 * 16) / (10*16) -> 0 / 160 -> 0
 					// 0 % 10*16 + 16 /
 					int iconIndex = 15;
-					f6  = (float)(iconIndex % dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_X * tileWidth) / (float)(dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_X * tileWidth);
-					f8  = (float)(iconIndex % dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_X * tileWidth + tileWidth) / (float)(dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_X * tileWidth);
-					f10 = (float)(iconIndex / dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_Y * tileWidth) / (float)(dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_Y * tileWidth);
-					f11 = (float)(iconIndex / dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_Y * tileWidth + tileWidth) / (float)(dotBlueShoes.GemsMod.Global.TILEMAP_GEMS_ELEMENTS_Y * tileWidth);
+					f6  = (float)(iconIndex % Global.atlasGems.elements.x * tileWidth) / (float)(Global.atlasGems.elements.x * tileWidth);
+					f8  = (float)(iconIndex % Global.atlasGems.elements.x * tileWidth + tileWidth) / (float)(Global.atlasGems.elements.x * tileWidth);
+					f10 = (float)(iconIndex / Global.atlasGems.elements.y * tileWidth) / (float)(Global.atlasGems.elements.y * tileWidth);
+					f11 = (float)(iconIndex / Global.atlasGems.elements.y * tileWidth + tileWidth) / (float)(Global.atlasGems.elements.y * tileWidth);
 
 				} else {
 
 					int iconIndex = itemstack.getIconIndex();
 					this.loadTexture("/gui/items.png");
 					tileWidth = TextureFX.tileWidthItems;
-					f6  = (float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-					f8  = (float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth + tileWidth) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-					f10 = (float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-					f11 = (float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth + tileWidth) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					f6  = (float)(iconIndex % TEXTURE_ATLAS_WIDTH_TILES * tileWidth) / (float)(TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					f8  = (float)(iconIndex % TEXTURE_ATLAS_WIDTH_TILES * tileWidth + tileWidth) / (float)(TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					f10 = (float)(iconIndex / TEXTURE_ATLAS_WIDTH_TILES * tileWidth) / (float)(TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					f11 = (float)(iconIndex / TEXTURE_ATLAS_WIDTH_TILES * tileWidth + tileWidth) / (float)(TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
 
 				}
 
@@ -299,7 +300,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 				GL11.glColor4f(brightness, brightness, brightness, alpha);
 			}
 
-			this.renderTexturedQuad(l, i1, k % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth, k / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth, tileWidth, tileWidth);
+			this.renderTexturedQuad(l, i1, k % TEXTURE_ATLAS_WIDTH_TILES * tileWidth, k / TEXTURE_ATLAS_WIDTH_TILES * tileWidth, tileWidth, tileWidth);
 			GL11.glEnable(2896);
 		}
 
