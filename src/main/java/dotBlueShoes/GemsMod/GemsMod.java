@@ -2,6 +2,7 @@ package dotBlueShoes.GemsMod;
 
 import dotBlueShoes.GemsMod.init.Blocks;
 import dotBlueShoes.GemsMod.init.Items;
+import dotBlueShoes.GemsMod.Global;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -29,8 +30,6 @@ import org.slf4j.LoggerFactory;
 
 public class GemsMod implements ModInitializer {
 
-	public static final Logger LOGGER = LoggerFactory.getLogger(Global.MOD_ID);
-
 	@Override
 	public void onInitialize() {
 
@@ -47,7 +46,7 @@ public class GemsMod implements ModInitializer {
 		Blocks.onInitialize();
 		Items.onInitialize();
 
-		LOGGER.info("Gems initialized.");
+		Global.LOGGER.info("Gems initialized.");
 	}
 
 }

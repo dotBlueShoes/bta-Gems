@@ -4,11 +4,17 @@ import net.minecraft.core.block.Block;
 
 public class Registry {
 
-	public static int GetBlockRegistryId() {
-		return Block.highestBlockId;
+	private static int newBlockId = Block.highestBlockId;
+	private static int newItemId = 17000;
+
+
+	public static int GetNewBlockId() {
+		newBlockId++;
+		return newBlockId;
 	}
-	public static int GetItemRegistryId() {
-		return 17000;
+	public static int GetNewItemId() {
+		newItemId++;
+		return newItemId;
 	}
 
 }

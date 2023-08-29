@@ -7,17 +7,17 @@ public class TextureAtlas {
 	public final Pair<Integer> elements;
 	public final int resolution;
 
-	public final Range<Integer> indexes;
+	//public final Range<Integer> indexes;
 
-	public TextureAtlas(String modid, String pathname, Pair<Integer> elements, int resolution, Range<Integer> indexes) {
+	public TextureAtlas(String modid, String pathname, Pair<Integer> elements, int resolution) {
 		this.modid = modid;
 		this.pathname = pathname;
 		this.elements = elements;
 		this.resolution = resolution;
-		this.indexes = indexes;
+		//this.indexes = indexes;
 	}
 
 	public String getName() {
-		return "/assets/" + modid + "/" + pathname;
+		return modid + "/" + pathname;
 	}
 }

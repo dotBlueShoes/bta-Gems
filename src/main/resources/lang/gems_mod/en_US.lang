@@ -1,3 +1,45 @@
 tile.gems_mod.example_block.name=Example Block
 item.gems_mod.example_item.name=Example Item
 item.gems_mod.example_item.desc=Example Item description.
+
+item.gems_mod.gem_whole_topaz.name=Whole Topaz
+item.gems_mod.gem_normal_topaz.name=Topaz
+item.gems_mod.gem_tiny_topaz.name=Tiny Topaz
+item.gems_mod.gem_whole_tanzanite.name=Whole Tanzanite
+item.gems_mod.gem_normal_tanzanite.name=Tanzanite
+item.gems_mod.gem_tiny_tanzanite.name=Tiny Tanzanite
+item.gems_mod.gem_whole_sapphire.name=Whole Sapphire
+item.gems_mod.gem_normal_sapphire.name=Sapphire
+item.gems_mod.gem_tiny_sapphire.name=Tiny Sapphire
+item.gems_mod.gem_whole_ruby.name=Whole Ruby
+item.gems_mod.gem_normal_ruby.name=Ruby
+item.gems_mod.gem_tiny_ruby.name=Tiny Ruby
+item.gems_mod.gem_whole_peridot.name=Whole Peridot
+item.gems_mod.gem_normal_peridot.name=Peridot
+item.gems_mod.gem_tiny_peridot.name=Tiny Peridot
+item.gems_mod.gem_whole_malachite.name=Whole Malachite
+item.gems_mod.gem_normal_malachite.name=Malachite
+item.gems_mod.gem_tiny_malachite.name=Tiny Malachite
+item.gems_mod.gem_whole_emerald.name=Whole Emerald
+item.gems_mod.gem_normal_emerald.name=Emerald
+item.gems_mod.gem_tiny_emerald.name=Tiny Emerald
+item.gems_mod.gem_whole_amber.name=Whole Amber
+item.gems_mod.gem_normal_amber.name=Amber
+item.gems_mod.gem_tiny_amber.name=Tiny Amber
+item.gems_mod.gem_whole_diamond.name=Whole Diamond
+item.gems_mod.gem_normal_diamond.name=Diamond
+item.gems_mod.gem_tiny_diamond.name=Tiny Diamond
+item.gems_mod.gem_whole_black_diamond.name=Whole Black Diamond
+item.gems_mod.gem_normal_black_diamond.name=Black Diamond
+item.gems_mod.gem_tiny_black_diamond.name=Tiny Black Diamond
+
+tile.gems_mod.ore_topaz.name=Topaz Ore
+tile.gems_mod.ore_tanzanite.name=Tanzanite Ore
+tile.gems_mod.ore_sapphire.name=Sapphire Ore
+tile.gems_mod.ore_ruby.name=Ruby Ore
+tile.gems_mod.ore_peridot.name=Peridot Ore
+tile.gems_mod.ore_malachite.name=Malachite Ore
+tile.gems_mod.ore_emerald.name=Emerald Ore
+tile.gems_mod.ore_amber.name=Amber Ore
+
+

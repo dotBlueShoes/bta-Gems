@@ -1,6 +1,7 @@
 package dotBlueShoes.GemsMod.util;
 
 import dotBlueShoes.GemsMod.GemsMod;
+import dotBlueShoes.GemsMod.Global;
 import net.minecraft.client.GLAllocation;
 import net.minecraft.client.render.RenderEngine;
 import net.minecraft.client.render.texturepack.TexturePackBase;
@@ -28,20 +29,20 @@ public class RenderEngineHelper {
 		/// With this we're at the TOP e.g. resources root.
 		//ClassLoader classLoader = RenderEngineHelper.class.getClassLoader();
 		TexturePackBase texturePack = renderEngine.texturePacks.selectedTexturePack;
-		GemsMod.LOGGER.info("TexturePack: " + texturePack.texturePackFileName);
-		GemsMod.LOGGER.info("Resource: " + texturePack.getClass().getResource("/"));
+		Global.LOGGER.info("TexturePack: " + texturePack.texturePackFileName);
+		Global.LOGGER.info("Resource: " + texturePack.getClass().getResource("/"));
 
 		String[] afiles = texturePack.getFilesInDirectory("");
 		for (String file : afiles) {
-			GemsMod.LOGGER.info("a " + file);
+			Global.LOGGER.info("a " + file);
 		}
 		String[] bfiles = texturePack.getFilesInDirectory("/assets/");
 		for (String file : bfiles) {
-			GemsMod.LOGGER.info("b " + file);
+			Global.LOGGER.info("b " + file);
 		}
 		String[] cfiles = texturePack.getFilesInDirectory("/assets/gems_mod/item/");
 		for (String file : cfiles) {
-			GemsMod.LOGGER.info("c " + file);
+			Global.LOGGER.info("c " + file);
 		}
 
 		id = GLAllocation.generateTexture();
@@ -53,20 +54,20 @@ public class RenderEngineHelper {
 		//for (File file : getResourceFolderFiles(texturePack, "assets")) {
 		//	System.out.println(file);
 		//}
-		GemsMod.LOGGER.info("1: " + "/assets/gems_mod/item/tilemap_gems.png");
-		GemsMod.LOGGER.info("2: " + texturePath);
+		Global.LOGGER.info("1: " + "/assets/gems_mod/item/tilemap_gems.png");
+		Global.LOGGER.info("2: " + texturePath);
 
 		try (InputStream inputStream = texturePack.getResourceAsStream(texturePath)) {
 
 			/// When NULL setup "Missing Texture instead".
 			if (inputStream == null) {
 
-				GemsMod.LOGGER.info(STRING_STREAM_ERROR);
+				Global.LOGGER.info(STRING_STREAM_ERROR);
 				renderEngine.setupTexture(Textures.missingTexture, id, false);
 
 			} else {
 
-				GemsMod.LOGGER.info("Sprite Found!");
+				Global.LOGGER.info("Sprite Found!");
 				renderEngine.setupTexture(Textures.readImage(inputStream), id, false);
 
 			}

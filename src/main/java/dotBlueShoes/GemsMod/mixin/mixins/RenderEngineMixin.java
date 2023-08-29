@@ -1,8 +1,10 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
 import dotBlueShoes.GemsMod.Global;
+import dotBlueShoes.GemsMod.init.AtlasSprites;
 import dotBlueShoes.GemsMod.util.RenderEngineHelper;
 
+import dotBlueShoes.GemsMod.util.TextureAtlas;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.RenderEngine;
 import net.minecraft.client.render.dynamictexture.DynamicTexture;
@@ -40,7 +42,9 @@ public abstract class RenderEngineMixin {
 		//String spriteAtlas = "/assets/" + Global.MOD_ID + "/" + Global.TILEMAP_GEMS_IMAGE;
 		//String spriteAtlas = Global.MOD_ID + "/" + Global.TILEMAP_GEMS_IMAGE;
 
-		RenderEngineHelper.getCustomTexture((RenderEngine)(Object)this, Global.atlasGems.getName());
+		for (TextureAtlas atlas : AtlasSprites.atlases) {
+			RenderEngineHelper.getCustomTexture((RenderEngine)(Object)this, atlas.getName());
+		}
 
 		//// I believe we're loading a texture only to read its size for now.
 		//GL11.glBindTexture(Global.OPENGL_VERSION, RenderEngineHelper.getCustomTexture((RenderEngine)(Object)this, spriteAtlas));

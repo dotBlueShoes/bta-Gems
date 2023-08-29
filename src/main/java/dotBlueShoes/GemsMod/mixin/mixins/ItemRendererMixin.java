@@ -1,5 +1,7 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
+import dotBlueShoes.GemsMod.blocks.AtlasSpriteBlock;
+import dotBlueShoes.GemsMod.items.AtlasSpriteItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.ItemRenderer;
 import net.minecraft.client.render.RenderBlocks;
@@ -53,43 +55,89 @@ public abstract class ItemRendererMixin {
 		BlockModelRenderBlocks.setRenderBlocks(this.renderBlocksInstance);
 
 		if (itemstack.itemID < Block.blocksList.length && ((BlockModel) BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID])).shouldItemRender3d()) {
-			GL11.glEnable(3042);
-			GL11.glBlendFunc(770, 771);
-			GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/terrain.png"));
+
 			float brightness = entity.getBrightness(1.0f);
 			if (this.mc.fullbright) {
 				brightness = 1.0f;
 			}
+
+			GL11.glEnable(3042);
+			GL11.glBlendFunc(770, 771);
+
+			if (Block.blocksList[itemstack.itemID] instanceof AtlasSpriteBlock) {
+				AtlasSpriteBlock atlasSpriteBlock = (AtlasSpriteBlock) Block.blocksList[itemstack.itemID];
+				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture(atlasSpriteBlock.textureAtlas.getName()));
+			} else {
+				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/terrain.png"));
+			}
+
 			this.renderBlocksInstance.renderBlockOnInventory(Block.blocksList[itemstack.itemID], itemstack.getMetadata(), brightness);
 			GL11.glDisable(3042);
+
 		} else {
+
+
+			int iconIndex = itemstack.getItem().getIconIndex(itemstack);
+			if (entity instanceof EntityLiving) {
+				iconIndex = ((EntityLiving)entity).getItemIcon(itemstack);
+			}
+
 			int tileWidth;
+			float xo;
+			float xe;
+			float yo;
+			float ye;
+			float foon;
+			float goon;
 
 			if (itemstack.itemID < Block.blocksList.length) {
+				//dotBlueShoes.GemsMod.Global.LOGGER.info("id:" + itemstack.itemID);
+				//if (Block.blocksList[itemstack.itemID] instanceof AtlasSpriteBlock) {
+				//	dotBlueShoes.GemsMod.Global.LOGGER.info("yup");
+				//}
 				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/terrain.png"));
 				tileWidth = TextureFX.tileWidthTerrain;
+
+				xo = ((float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+				xe = ((float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+				yo = ((float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+				ye = ((float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+				foon = 0.5f / (float)tileWidth / (float)Global.TEXTURE_ATLAS_WIDTH_TILES;
+				goon = 0.0625f * (16.0f / (float)tileWidth);
+
 			} else {
-				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/gui/items.png"));
-				tileWidth = TextureFX.tileWidthItems;
+				if (itemstack.getItem() instanceof AtlasSpriteItem) {
+					AtlasSpriteItem atlasSpriteItem = (AtlasSpriteItem) itemstack.getItem();
+					GL11.glBindTexture(3553, this.mc.renderEngine.getTexture(atlasSpriteItem.textureAtlas.getName()));
+					tileWidth = atlasSpriteItem.textureAtlas.resolution;
+
+					xo  = ((float) (atlasSpriteItem.getItemIndex() % atlasSpriteItem.textureAtlas.elements.x) / atlasSpriteItem.textureAtlas.elements.x);
+					xe  = xo + (1f / atlasSpriteItem.textureAtlas.elements.x);
+					yo = ((float) (atlasSpriteItem.getItemIndex() / atlasSpriteItem.textureAtlas.elements.x) / atlasSpriteItem.textureAtlas.elements.y);
+					ye = yo + (1f / atlasSpriteItem.textureAtlas.elements.y);
+
+					foon = 0.5f / (float)tileWidth / (float)atlasSpriteItem.textureAtlas.elements.x;
+					goon = 0.0625f * (16.0f / (float)tileWidth);
+
+				} else {
+					GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/gui/items.png"));
+					tileWidth = TextureFX.tileWidthItems;
+
+					xo = ((float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					xe = ((float)(iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					yo = ((float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					ye = ((float)(iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
+					foon = 0.5f / (float)tileWidth / (float)Global.TEXTURE_ATLAS_WIDTH_TILES;
+					goon = 0.0625f * (16.0f / (float)tileWidth);
+				}
 			}
 
 			Tessellator tessellator = Tessellator.instance;
-			int i = itemstack.getItem().getIconIndex(itemstack);
-
-			if (entity instanceof EntityLiving) {
-				i = ((EntityLiving)entity).getItemIcon(itemstack);
-			}
-
-			float f = ((float)(i % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-			float f1 = ((float)(i % Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-			float f2 = ((float)(i / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + 0.0f) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
-			float f3 = ((float)(i / Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth) + ((float)tileWidth - 0.01f)) / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * tileWidth);
 			float f4 = 1.0f;
 			float f5 = 0.0f;
 			float f6 = 0.3f;
 
-			float foon = 0.5f / (float)tileWidth / (float)Global.TEXTURE_ATLAS_WIDTH_TILES;
-			float goon = 0.0625f * (16.0f / (float)tileWidth);
+
 
 			GL11.glEnable(32826);
 
@@ -105,29 +153,29 @@ public abstract class ItemRendererMixin {
 			float thickness = 0.0625f;
 			tessellator.startDrawingQuads();
 			tessellator.setNormal(0.0f, 0.0f, 1.0f);
-			tessellator.addVertexWithUV(0.0, 0.0, 0.0, f1, f3);
-			tessellator.addVertexWithUV(f4, 0.0, 0.0, f, f3);
-			tessellator.addVertexWithUV(f4, 1.0, 0.0, f, f2);
-			tessellator.addVertexWithUV(0.0, 1.0, 0.0, f1, f2);
+			tessellator.addVertexWithUV(0.0, 0.0, 0.0, xe, ye);
+			tessellator.addVertexWithUV(f4, 0.0, 0.0, xo, ye);
+			tessellator.addVertexWithUV(f4, 1.0, 0.0, xo, yo);
+			tessellator.addVertexWithUV(0.0, 1.0, 0.0, xe, yo);
 			tessellator.draw();
 			tessellator.startDrawingQuads();
 			tessellator.setNormal(0.0f, 0.0f, -1.0f);
-			tessellator.addVertexWithUV(0.0, 1.0, 0.0f - thickness, f1, f2);
-			tessellator.addVertexWithUV(f4, 1.0, 0.0f - thickness, f, f2);
-			tessellator.addVertexWithUV(f4, 0.0, 0.0f - thickness, f, f3);
-			tessellator.addVertexWithUV(0.0, 0.0, 0.0f - thickness, f1, f3);
+			tessellator.addVertexWithUV(0.0, 1.0, 0.0f - thickness, xe, yo);
+			tessellator.addVertexWithUV(f4, 1.0, 0.0f - thickness, xo, yo);
+			tessellator.addVertexWithUV(f4, 0.0, 0.0f - thickness, xo, ye);
+			tessellator.addVertexWithUV(0.0, 0.0, 0.0f - thickness, xe, ye);
 			tessellator.draw();
 			tessellator.startDrawingQuads();
 			tessellator.setNormal(-1.0f, 0.0f, 0.0f);
 
 			for (int j = 0; j < tileWidth; ++j) {
 				float f9 = (float)j / (float)tileWidth;
-				float f13 = f1 + (f - f1) * f9 - foon;
+				float f13 = xe + (xo - xe) * f9 - foon;
 				float f17 = f4 * f9;
-				tessellator.addVertexWithUV(f17, 0.0, 0.0f - thickness, f13, f3);
-				tessellator.addVertexWithUV(f17, 0.0, 0.0, f13, f3);
-				tessellator.addVertexWithUV(f17, 1.0, 0.0, f13, f2);
-				tessellator.addVertexWithUV(f17, 1.0, 0.0f - thickness, f13, f2);
+				tessellator.addVertexWithUV(f17, 0.0, 0.0f - thickness, f13, ye);
+				tessellator.addVertexWithUV(f17, 0.0, 0.0, f13, ye);
+				tessellator.addVertexWithUV(f17, 1.0, 0.0, f13, yo);
+				tessellator.addVertexWithUV(f17, 1.0, 0.0f - thickness, f13, yo);
 			}
 
 			tessellator.draw();
@@ -136,12 +184,12 @@ public abstract class ItemRendererMixin {
 
 			for (int k = 0; k < tileWidth; ++k) {
 				float f10 = (float)k / (float)tileWidth;
-				float f14 = f1 + (f - f1) * f10 - foon;
+				float f14 = xe + (xo - xe) * f10 - foon;
 				float f18 = f4 * f10 + goon;
-				tessellator.addVertexWithUV(f18, 1.0, 0.0f - thickness, f14, f2);
-				tessellator.addVertexWithUV(f18, 1.0, 0.0, f14, f2);
-				tessellator.addVertexWithUV(f18, 0.0, 0.0, f14, f3);
-				tessellator.addVertexWithUV(f18, 0.0, 0.0f - thickness, f14, f3);
+				tessellator.addVertexWithUV(f18, 1.0, 0.0f - thickness, f14, yo);
+				tessellator.addVertexWithUV(f18, 1.0, 0.0, f14, yo);
+				tessellator.addVertexWithUV(f18, 0.0, 0.0, f14, ye);
+				tessellator.addVertexWithUV(f18, 0.0, 0.0f - thickness, f14, ye);
 			}
 
 			tessellator.draw();
@@ -150,12 +198,12 @@ public abstract class ItemRendererMixin {
 
 			for (int l = 0; l < tileWidth; ++l) {
 				float f11 = (float)l / (float)tileWidth;
-				float f15 = f3 + (f2 - f3) * f11 - foon;
+				float f15 = ye + (yo - ye) * f11 - foon;
 				float f19 = f4 * f11 + goon;
-				tessellator.addVertexWithUV(0.0, f19, 0.0, f1, f15);
-				tessellator.addVertexWithUV(f4, f19, 0.0, f, f15);
-				tessellator.addVertexWithUV(f4, f19, 0.0f - thickness, f, f15);
-				tessellator.addVertexWithUV(0.0, f19, 0.0f - thickness, f1, f15);
+				tessellator.addVertexWithUV(0.0, f19, 0.0, xe, f15);
+				tessellator.addVertexWithUV(f4, f19, 0.0, xo, f15);
+				tessellator.addVertexWithUV(f4, f19, 0.0f - thickness, xo, f15);
+				tessellator.addVertexWithUV(0.0, f19, 0.0f - thickness, xe, f15);
 			}
 
 			tessellator.draw();
@@ -164,12 +212,12 @@ public abstract class ItemRendererMixin {
 
 			for (int i1 = 0; i1 < tileWidth; ++i1) {
 				float f12 = (float)i1 / (float)tileWidth;
-				float f16 = f3 + (f2 - f3) * f12 - foon;
+				float f16 = ye + (yo - ye) * f12 - foon;
 				float f20 = f4 * f12;
-				tessellator.addVertexWithUV(f4, f20, 0.0, f, f16);
-				tessellator.addVertexWithUV(0.0, f20, 0.0, f1, f16);
-				tessellator.addVertexWithUV(0.0, f20, 0.0f - thickness, f1, f16);
-				tessellator.addVertexWithUV(f4, f20, 0.0f - thickness, f, f16);
+				tessellator.addVertexWithUV(f4, f20, 0.0, xo, f16);
+				tessellator.addVertexWithUV(0.0, f20, 0.0, xe, f16);
+				tessellator.addVertexWithUV(0.0, f20, 0.0f - thickness, xe, f16);
+				tessellator.addVertexWithUV(f4, f20, 0.0f - thickness, xo, f16);
 			}
 
 			tessellator.draw();

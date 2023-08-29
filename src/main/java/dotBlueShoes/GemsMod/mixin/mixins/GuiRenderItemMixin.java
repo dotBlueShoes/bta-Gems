@@ -40,31 +40,24 @@ public abstract class GuiRenderItemMixin extends Gui {
 
 		boolean hasDrawnSlotBackground = false;
 		boolean discovered = true;
-
-		GL11.glPushMatrix();
-		GL11.glRotatef(120.0f, 1.0f, 0.0f, 0.0f);
-		Lighting.turnOff();
-		GL11.glPopMatrix();
-		GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+		Lighting.enableInventoryLight();
+		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 		GL11.glEnable(32826);
-
 		if (slot != null) {
 			discovered = slot.discovered;
 			int iconIndex = slot.getBackgroundIconIndex();
-
 			if (iconIndex >= 0 && itemStack == null) {
 				GL11.glDisable(2896);
 				this.mc.renderEngine.bindTexture(this.mc.renderEngine.getTexture("/gui/items.png"));
-				this.drawTexturedModalRect(x, y, iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems, iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems, 16, 16, TextureFX.tileWidthItems, 1.0f / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems));
+				this.drawTexturedModalRect(x, y, iconIndex % Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems, iconIndex / Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems, 16, 16, TextureFX.tileWidthItems, 1.0F / (float)(Global.TEXTURE_ATLAS_WIDTH_TILES * TextureFX.tileWidthItems));
 				GL11.glEnable(2896);
 				hasDrawnSlotBackground = true;
 			}
-
 		}
 
 		if (!hasDrawnSlotBackground) {
 			GL11.glEnable(2929);
-			itemRenderer.renderItemIntoGUI(this.mc.fontRenderer, this.mc.renderEngine, itemStack, x, y, discovered ? 1.0f : 0.0f, 1.0f);
+			itemRenderer.renderItemIntoGUI(this.mc.fontRenderer, this.mc.renderEngine, itemStack, x, y, discovered ? 1.0F : 0.0F, 1.0F);
 			itemRenderer.renderItemOverlayIntoGUI(this.mc.fontRenderer, this.mc.renderEngine, itemStack, x, y, discovered ? null : "?");
 			GL11.glDisable(2929);
 		}
@@ -78,7 +71,7 @@ public abstract class GuiRenderItemMixin extends Gui {
 		}
 
 		GL11.glDisable(32826);
-		Lighting.turnOn();
+		Lighting.disable();
 		GL11.glDisable(2896);
 		GL11.glDisable(2929);
 
