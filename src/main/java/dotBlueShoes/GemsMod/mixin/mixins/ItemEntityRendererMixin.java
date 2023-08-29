@@ -1,5 +1,6 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
+import dotBlueShoes.GemsMod.blocks.AtlasSpriteBlock;
 import dotBlueShoes.GemsMod.items.AtlasSpriteItem;
 import dotBlueShoes.GemsMod.util.Pair;
 import dotBlueShoes.GemsMod.util.RenderEngineHelper;
@@ -92,14 +93,27 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 		GL11.glTranslatef((float)d, (float)d1 + f2, (float)d2);
 		GL11.glEnable(32826);
 
-		if (itemstack.itemID < Block.blocksList.length && Block.blocksList[itemstack.itemID] != null && ((BlockModel) BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID])).shouldItemRender3d()) {
+		if (itemstack.itemID < Block.blocksList.length && Block.blocksList[itemstack.itemID] != null && BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]).shouldItemRender3d()) {
 
 			GL11.glRotatef(f3, 0.0f, 1.0f, 0.0f);
 
-			this.loadTexture("/terrain.png");
+			if (Block.blocksList[itemstack.itemID] instanceof AtlasSpriteBlock) {
+				AtlasSpriteBlock atlasSpriteBlock = (AtlasSpriteBlock) Block.blocksList[itemstack.itemID];
+				this.loadTexture(atlasSpriteBlock.textureAtlas.getName());
+			} else {
+				this.loadTexture("/terrain.png");
+			}
+
+			dotBlueShoes.GemsMod.Global.LOGGER.info("renderType: " +
+				((BlockModelRenderBlocks)BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]))
+					.renderType
+			);
 
 			BlockModelRenderBlocks.setRenderBlocks(this.renderBlocks);
-			BlockModel model = (BlockModel)BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]);
+			BlockModel model = BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]);
+
+
+
 			float itemSize = model.getItemRenderScale();
 			GL11.glScalef(itemSize, itemSize, itemSize);
 
@@ -115,7 +129,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 
 				float f4 = entity.getBrightness(f1);
 
-				if (Minecraft.getMinecraft((Object)this).fullbright) {
+				if (Minecraft.getMinecraft(this).fullbright) {
 					f4 = 1.0f;
 				}
 
@@ -144,8 +158,6 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 					int texture = RenderEngineHelper.getCustomTexture(renderEngine, atlasSpriteItem.textureAtlas.getName());
 					renderEngine.bindTexture(texture);
 
-
-					tileWidth = atlasSpriteItem.textureAtlas.resolution;
 					int spriteIndex = atlasSpriteItem.getItemIndex();
 					//f6  = (float)(iconIndex / atlasSpriteItem.textureAtlas.elements.x * tileWidth) / (float)(atlasSpriteItem.textureAtlas.elements.x * tileWidth);
 					//f8  = (float)(iconIndex / atlasSpriteItem.textureAtlas.elements.x * tileWidth + tileWidth) / (float)(atlasSpriteItem.textureAtlas.elements.x * tileWidth);
