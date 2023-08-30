@@ -2,6 +2,7 @@ package dotBlueShoes.GemsMod.mixin.mixins;
 
 import dotBlueShoes.GemsMod.blocks.AtlasSpriteBlock;
 import dotBlueShoes.GemsMod.items.AtlasSpriteItem;
+import dotBlueShoes.GemsMod.util.RenderBlocksHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.ItemRenderer;
 import net.minecraft.client.render.RenderBlocks;
@@ -66,8 +67,10 @@ public abstract class ItemRendererMixin {
 
 			if (Block.blocksList[itemstack.itemID] instanceof AtlasSpriteBlock) {
 				AtlasSpriteBlock atlasSpriteBlock = (AtlasSpriteBlock) Block.blocksList[itemstack.itemID];
+				RenderBlocksHelper.currentAtlas = atlasSpriteBlock.textureAtlas;
 				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture(atlasSpriteBlock.textureAtlas.getName()));
 			} else {
+				RenderBlocksHelper.currentAtlas = RenderBlocksHelper.vanillaAtlas;
 				GL11.glBindTexture(3553, this.mc.renderEngine.getTexture("/terrain.png"));
 			}
 

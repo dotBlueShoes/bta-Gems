@@ -1,8 +1,9 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
+import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.blocks.AtlasSpriteBlock;
 import dotBlueShoes.GemsMod.items.AtlasSpriteItem;
-import dotBlueShoes.GemsMod.util.Pair;
+import dotBlueShoes.GemsMod.util.RenderBlocksHelper;
 import dotBlueShoes.GemsMod.util.RenderEngineHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.*;
@@ -11,7 +12,6 @@ import net.minecraft.client.render.block.model.BlockModelDispatcher;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.ItemEntityRenderer;
-import net.minecraft.core.Global;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.item.Item;
@@ -99,15 +99,17 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 
 			if (Block.blocksList[itemstack.itemID] instanceof AtlasSpriteBlock) {
 				AtlasSpriteBlock atlasSpriteBlock = (AtlasSpriteBlock) Block.blocksList[itemstack.itemID];
+				RenderBlocksHelper.currentAtlas = atlasSpriteBlock.textureAtlas;
 				this.loadTexture(atlasSpriteBlock.textureAtlas.getName());
 			} else {
+				RenderBlocksHelper.currentAtlas = RenderBlocksHelper.vanillaAtlas;
 				this.loadTexture("/terrain.png");
 			}
 
-			dotBlueShoes.GemsMod.Global.LOGGER.info("renderType: " +
-				((BlockModelRenderBlocks)BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]))
-					.renderType
-			);
+			//dotBlueShoes.GemsMod.Global.LOGGER.info("renderType: " +
+			//	((BlockModelRenderBlocks)BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]))
+			//		.renderType
+			//);
 
 			BlockModelRenderBlocks.setRenderBlocks(this.renderBlocks);
 			BlockModel model = BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemstack.itemID]);
@@ -149,6 +151,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 
 			if (itemstack.itemID < Block.blocksList.length) {
 				this.loadTexture("/terrain.png");
+				//Global.LOGGER.info("call");
 				tileWidth = TextureFX.tileWidthTerrain;
 			} else {
 				if (itemstack.getItem() instanceof AtlasSpriteItem) {
@@ -270,14 +273,23 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 		),
 		cancellable = true, remap = false
 	)
-	public void drawItemIntoGui(FontRenderer fontrenderer, RenderEngine renderengine, int i, int j, int spriteIndex, int x, int y, float brightness, float alpha, CallbackInfo ci) {
-		if (i < Block.blocksList.length && ((BlockModel)BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[i])).shouldItemRender3d()) {
+	public void drawItemIntoGui(FontRenderer fontrenderer, RenderEngine renderengine, int itemId, int j, int spriteIndex, int x, int y, float brightness, float alpha, CallbackInfo ci) {
+		if (itemId < Block.blocksList.length && BlockModelDispatcher.getInstance().getDispatch(Block.blocksList[itemId]).shouldItemRender3d()) {
 
 			GL11.glEnable(3042);
 			GL11.glBlendFunc(770, 771);
-			int j1 = i;
-			renderengine.bindTexture(renderengine.getTexture("/terrain.png"));
-			Block block = Block.blocksList[j1];
+
+			if (Block.blocksList[itemId] instanceof AtlasSpriteBlock) {
+				AtlasSpriteBlock atlasSpriteBlock = (AtlasSpriteBlock) Block.blocksList[itemId];
+				RenderBlocksHelper.currentAtlas = atlasSpriteBlock.textureAtlas;
+				renderengine.bindTexture(renderengine.getTexture(atlasSpriteBlock.textureAtlas.getName()));
+			} else {
+				RenderBlocksHelper.currentAtlas = RenderBlocksHelper.vanillaAtlas;
+				renderengine.bindTexture(renderengine.getTexture("terrain.png"));
+			}
+
+
+			Block block = Block.blocksList[itemId];
 
 			GL11.glPushMatrix();
 			GL11.glTranslatef(x - 2, y + 3, -3.0f);
@@ -287,7 +299,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 			GL11.glRotatef(210.0f, 1.0f, 0.0f, 0.0f);
 			GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
 
-			int l1 = Item.itemsList[i].getColorFromDamage(j);
+			int l1 = Item.itemsList[itemId].getColorFromDamage(j);
 			float f2 = (float)(l1 >> 16 & 0xFF) / 255.0f;
 			float f4 = (float)(l1 >> 8 & 0xFF) / 255.0f;
 			float f5 = (float)(l1 & 0xFF) / 255.0f;
@@ -310,15 +322,16 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 			int tileWidth;
 			GL11.glDisable(2896);
 
-			if (i < Block.blocksList.length) {
+			if (itemId < Block.blocksList.length) {
 				renderengine.bindTexture(renderengine.getTexture("/terrain.png"));
 				tileWidth = TextureFX.tileWidthTerrain;
-				defaultRenderer(i, j, spriteIndex, x, y, brightness, alpha, tileWidth);
+				defaultRenderer(itemId, j, spriteIndex, x, y, brightness, alpha, tileWidth);
+				//Global.LOGGER.info("call");
 
 			} else {
 
-				if (Item.itemsList[i] instanceof AtlasSpriteItem) {
-					AtlasSpriteItem atlasSpriteItem = (AtlasSpriteItem) Item.itemsList[i];
+				if (Item.itemsList[itemId] instanceof AtlasSpriteItem) {
+					AtlasSpriteItem atlasSpriteItem = (AtlasSpriteItem) Item.itemsList[itemId];
 					renderengine.bindTexture(renderengine.getTexture(atlasSpriteItem.textureAtlas.getName()));
 
 					{
@@ -381,7 +394,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<EntityItem>
 				} else {
 					renderengine.bindTexture(renderengine.getTexture("/gui/items.png"));
 					tileWidth = TextureFX.tileWidthItems;
-					defaultRenderer(i, j, spriteIndex, x, y, brightness, alpha, tileWidth);
+					defaultRenderer(itemId, j, spriteIndex, x, y, brightness, alpha, tileWidth);
 				}
 
 			}
