@@ -1,12 +1,10 @@
 package dotBlueShoes.GemsMod;
 
-import dotBlueShoes.GemsMod.init.Blocks;
-import dotBlueShoes.GemsMod.init.Items;
-import dotBlueShoes.GemsMod.Global;
+import dotBlueShoes.GemsMod.initialize.Blocks;
+import dotBlueShoes.GemsMod.initialize.Items;
 
+import dotBlueShoes.GemsMod.initialize.Recipes;
 import net.fabricmc.api.ModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 // ABOUT
@@ -33,18 +31,9 @@ public class GemsMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		//Minecraft mc = Minecraft.getMinecraft(Minecraft.class);
-		//if (mc != null) {
-		//	LOGGER.info("GOT MC!");
-		//}
-
-		// TODO:
-		// 1. Initialize TextureAtlases
-		// 2. Separate Get/Init in RenderEngineHelper
-		// 3. TextureAtlases not final so its resolution can be changed by texturePacks.
-
 		Blocks.onInitialize();
 		Items.onInitialize();
+		Recipes.onInitialize();
 
 		Global.LOGGER.info("Gems initialized.");
 	}

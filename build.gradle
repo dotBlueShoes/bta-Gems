@@ -64,6 +64,15 @@ repositories {
 		}
 		metadataSources { artifact() }
 	}
+    ivy {
+        url = "https://github.com/dotBlueShoes"
+        patternLayout {
+            //artifact "[organisation]/releases/download/[revision]/atlas_lib-[revision].jar"
+            artifact "[module]/releases/download/[revision]/atlas_lib-[revision].jar"
+            m2compatible = true
+        }
+        metadataSources { artifact() }
+    }
 }
 
 dependencies {
@@ -76,6 +85,7 @@ dependencies {
 	// Helper library
 	// If you do not need Halplibe you can comment this line out or delete this line
 	modImplementation "com.github.Turnip-Labs:bta-halplibe:${project.halplibe_version}"
+    modImplementation "com.github.dotBlueShoes:bta-AtlasLib:${project.atlas_lib_version}"
 
 	modImplementation "ModMenu:ModMenu:2.0.0"
 

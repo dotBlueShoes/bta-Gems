@@ -1,5 +1,6 @@
-package dotBlueShoes.GemsMod.util;
+package dotBlueShoes.GemsMod.utility;
 
+import dotBlueShoes.GemsMod.Global;
 import net.minecraft.core.block.Block;
 
 public class Registry {
@@ -15,6 +16,10 @@ public class Registry {
 	public static int GetNewItemId() {
 		newItemId++;
 		return newItemId;
+	}
+
+	public static String GetModKey(String name) {
+		return Global.MOD_ID + "." + name;
 	}
 
 }
