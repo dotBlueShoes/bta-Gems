@@ -12,7 +12,7 @@ public class SpriteAtlases {
 	public static SpriteAtlas gemsSpriteAtlas = new SpriteAtlas(
 		Global.MOD_ID,
 		"gems.png",
-		new Pair<>(10, 4), 16
+		new Pair<>(10, 8), 16
 	);
 
 	public static List<SpriteAtlas> atlases = new ArrayList<SpriteAtlas>();

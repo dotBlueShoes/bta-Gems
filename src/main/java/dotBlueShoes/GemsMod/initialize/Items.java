@@ -1,8 +1,10 @@
 package dotBlueShoes.GemsMod.initialize;
 
+import dotBlueShoes.GemsMod.items.GemToolSwordItem;
 import dotBlueShoes.GemsMod.utility.Registry;
 import dotBlueShoes.GemsMod.items.GemItem;
 import net.minecraft.core.item.Item;
+import net.minecraft.core.item.material.ToolMaterial;
 
 public class Items {
 
@@ -179,6 +181,14 @@ public class Items {
 		Registry.GetNewItemId(),
 		SpriteAtlases.gemsSpriteAtlas
 	).setSpriteCoord(9, 2);
+
+	public static final GemToolSwordItem GEM_BLACK_DIAMOND_SWORD = new GemToolSwordItem(
+		Registry.GetModKey("gem_tiny_black_diamond"),
+		Registry.GetNewItemId(),
+		ToolMaterial.diamond,
+		SpriteAtlases.gemsSpriteAtlas,
+		0xffffff
+	).setSpriteCoord(0, 7);
 
 	public static final Item[] ITEMS = {
 		GEM_WHOLE_TOPAZ,
