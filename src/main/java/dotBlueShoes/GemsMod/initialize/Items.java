@@ -214,7 +214,8 @@ public class Items {
 
 
 	public static void onInitialize() {
-
+		//Item.diamond.
+		//GEM_TINY_DIAMOND.set
 	}
 
 }
