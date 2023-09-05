@@ -41,4 +41,7 @@ tile.gems_mod.ore_malachite.name=Malachite Ore
 tile.gems_mod.ore_emerald.name=Emerald Ore
 tile.gems_mod.ore_amber.name=Amber Ore
 
+item.gems_mod.gem_black_diamond_sword.name=Black Diamond Sword
+item.gems_mod.gem_amber_sword.name=Amber Sword
+
 

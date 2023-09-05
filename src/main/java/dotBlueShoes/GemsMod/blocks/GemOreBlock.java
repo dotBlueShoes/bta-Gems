@@ -49,10 +49,6 @@ public class GemOreBlock extends Block implements ISpriteAtlasBlock {
 		return this;
 	}
 
-	public int spriteCoordToIndex(int x, int y) {
-		return x + y * this.spriteAtlas.elements.x;
-	}
-
 	@Override
 	public int getSpriteIndex(int side) {
 		return this.atlasIndices[side];
@@ -60,7 +56,7 @@ public class GemOreBlock extends Block implements ISpriteAtlasBlock {
 
 	@Override
 	public GemOreBlock setSpriteCoord(int side, int x, int y) {
-		this.atlasIndices[side] = this.spriteCoordToIndex(x, y);
+		this.atlasIndices[side] = this.spriteAtlas.spriteCoordToIndex(x, y);
 		return this;
 	}
 

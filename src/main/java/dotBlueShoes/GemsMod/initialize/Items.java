@@ -183,12 +183,22 @@ public class Items {
 	).setSpriteCoord(9, 2);
 
 	public static final GemToolSwordItem GEM_BLACK_DIAMOND_SWORD = new GemToolSwordItem(
-		Registry.GetModKey("gem_tiny_black_diamond"),
+		Registry.GetModKey("gem_black_diamond_sword"),
 		Registry.GetNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
-		0xffffff
-	).setSpriteCoord(0, 7);
+		0xff0000
+	)   .setSpriteCoord(0, 7)
+		.setOverlayCoord(9, 3);
+
+	public static final GemToolSwordItem GEM_AMBER_SWORD = new GemToolSwordItem(
+		Registry.GetModKey("gem_amber_sword"),
+		Registry.GetNewItemId(),
+		ToolMaterial.diamond,
+		SpriteAtlases.gemsSpriteAtlas,
+		0x00ff00
+	)   .setSpriteCoord(0, 7)
+		.setOverlayCoord(9, 3);
 
 	public static final Item[] ITEMS = {
 		GEM_WHOLE_TOPAZ,

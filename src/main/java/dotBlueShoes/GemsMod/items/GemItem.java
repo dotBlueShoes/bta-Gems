@@ -14,10 +14,6 @@ public class GemItem extends Item implements ISpriteAtlasItem {
 		this.setKey(key);
 	}
 
-	public int spriteCoordToIndex(int x, int y) {
-		return x + y * this.spriteAtlas.elements.x;
-	}
-
 	@Override
 	public int getSpriteIndex() {
 		return this.iconIndex;
@@ -25,7 +21,7 @@ public class GemItem extends Item implements ISpriteAtlasItem {
 
 	@Override
 	public GemItem setSpriteCoord(int x, int y) {
-		this.iconIndex = this.spriteCoordToIndex(x, y);
+		this.iconIndex = this.spriteAtlas.spriteCoordToIndex(x, y);
 		return this;
 	}
 
