@@ -11,7 +11,6 @@ public class GemToolSwordItem extends ItemToolSword implements IColored, ISprite
 
 	private SpriteAtlas spriteAtlas;
 	private final int color;
-	private final int[] coordBase = { 0, 7 }; // replace with indexToSpriteCoords() on spriteAtlas.
 	private final int[] coordOverlay = new int[2];
 
 	public GemToolSwordItem(String name, int id, ToolMaterial enumtoolmaterial, SpriteAtlas spriteAtlas, int color) {
@@ -32,7 +31,10 @@ public class GemToolSwordItem extends ItemToolSword implements IColored, ISprite
 
 	@Override
 	public int[] baseTexture() {
-		return this.coordBase;
+		return new int[] {
+			this.spriteAtlas.spriteIndexToCoord(this.iconIndex).x,
+			this.spriteAtlas.spriteIndexToCoord(this.iconIndex).y
+		};
 	}
 
 	@Override

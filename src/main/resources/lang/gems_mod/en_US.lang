@@ -41,7 +41,54 @@ tile.gems_mod.ore_malachite.name=Malachite Ore
 tile.gems_mod.ore_emerald.name=Emerald Ore
 tile.gems_mod.ore_amber.name=Amber Ore
 
-item.gems_mod.gem_black_diamond_sword.name=Black Diamond Sword
+item.gems_mod.gem_topaz_sword.name=Topaz Sword
+item.gems_mod.gem_tanzanite_sword.name=Tanzanite Sword
+item.gems_mod.gem_sapphire_sword.name=Sapphire Sword
+item.gems_mod.gem_ruby_sword.name=Ruby Sword
+item.gems_mod.gem_peridot_sword.name=Peridot Sword
+item.gems_mod.gem_malachite_sword.name=Malachite Sword
+item.gems_mod.gem_emerald_sword.name=Emerald Sword
 item.gems_mod.gem_amber_sword.name=Amber Sword
+item.gems_mod.gem_black_diamond_sword.name=Black Diamond Sword
+
+item.gems_mod.gem_topaz_shovel.name=Topaz Shovel
+item.gems_mod.gem_tanzanite_shovel.name=Tanzanite Shovel
+item.gems_mod.gem_sapphire_shovel.name=Sapphire Shovel
+item.gems_mod.gem_ruby_shovel.name=Ruby Shovel
+item.gems_mod.gem_peridot_shovel.name=Peridot Shovel
+item.gems_mod.gem_malachite_shovel.name=Malachite Shovel
+item.gems_mod.gem_emerald_shovel.name=Emerald Shovel
+item.gems_mod.gem_amber_shovel.name=Amber Shovel
+item.gems_mod.gem_black_diamond_shovel.name=Black Diamond Shovel
+
+item.gems_mod.gem_topaz_pickaxe.name=Topaz Pickaxe
+item.gems_mod.gem_tanzanite_pickaxe.name=Tanzanite Pickaxe
+item.gems_mod.gem_sapphire_pickaxe.name=Sapphire Pickaxe
+item.gems_mod.gem_ruby_pickaxe.name=Ruby Pickaxe
+item.gems_mod.gem_peridot_pickaxe.name=Peridot Pickaxe
+item.gems_mod.gem_malachite_pickaxe.name=Malachite Pickaxe
+item.gems_mod.gem_emerald_pickaxe.name=Emerald Pickaxe
+item.gems_mod.gem_amber_pickaxe.name=Amber Pickaxe
+item.gems_mod.gem_black_diamond_pickaxe.name=Black Diamond Pickaxe
+
+item.gems_mod.gem_topaz_axe.name=Topaz Axe
+item.gems_mod.gem_tanzanite_axe.name=Tanzanite Axe
+item.gems_mod.gem_sapphire_axe.name=Sapphire Axe
+item.gems_mod.gem_ruby_axe.name=Ruby Axe
+item.gems_mod.gem_peridot_axe.name=Peridot Axe
+item.gems_mod.gem_malachite_axe.name=Malachite Axe
+item.gems_mod.gem_emerald_axe.name=Emerald Axe
+item.gems_mod.gem_amber_axe.name=Amber Axe
+item.gems_mod.gem_black_diamond_axe.name=Black Diamond Axe
+
+item.gems_mod.gem_topaz_hoe.name=Topaz Hoe
+item.gems_mod.gem_tanzanite_hoe.name=Tanzanite Hoe
+item.gems_mod.gem_sapphire_hoe.name=Sapphire Hoe
+item.gems_mod.gem_ruby_hoe.name=Ruby Hoe
+item.gems_mod.gem_peridot_hoe.name=Peridot Hoe
+item.gems_mod.gem_malachite_hoe.name=Malachite Hoe
+item.gems_mod.gem_emerald_hoe.name=Emerald Hoe
+item.gems_mod.gem_amber_hoe.name=Amber Hoe
+item.gems_mod.gem_black_diamond_hoe.name=Black Diamond Hoe
 
 
