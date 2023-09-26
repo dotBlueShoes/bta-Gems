@@ -92,11 +92,15 @@ dependencies {
 	modRuntimeOnly "objects:client:43db9b498cb67058d2e12d394e6507722e71bb45" // https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar
 	modImplementation "fabric-loader:fabric-loader:${project.loader_version}"
 
-    //modImplementation "com.github.dotBlueShoes:bta-AtlasLib:${project.atlas_lib_version}"
-    modImplementation name: "atlas_lib", group: "" , version: "${project.atlas_lib_version}"
+
 
     modImplementation "com.github.Turnip-Labs:bta-halplibe:${project.halplibe_version}"
-    modImplementation "BTA_Babric_PrismaticLibe:prismaticlibe:${project.prismatic_version}"
+
+    //modImplementation "BTA_Babric_PrismaticLibe:prismaticlibe:${project.prismatic_version}"
+    //modImplementation "com.github.dotBlueShoes:bta-AtlasLib:${project.atlas_lib_version}"
+
+    modImplementation name: "atlas_lib", group: "" , version: "${project.atlas_lib_version}"
+    modImplementation name: "prismaticlibe", group: "" , version: "${project.prismatic_version}"
 
 	modImplementation "ModMenu:ModMenu:2.0.0"
 

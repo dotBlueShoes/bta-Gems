@@ -4,6 +4,7 @@
   "package": "dotBlueShoes.GemsMod.mixin.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+	"ChunkDecoratorOverworldMixin"
   ],
   "client": [
   ],
