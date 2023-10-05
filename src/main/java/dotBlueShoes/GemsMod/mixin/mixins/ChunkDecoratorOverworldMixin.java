@@ -85,17 +85,17 @@ public class ChunkDecoratorOverworldMixin {
 		int chance = rand.nextInt(7);
 		// Because my ids are close I can easily enumerate on them.
 		// This will spawn one out of 7 gem ores per chunk.
-		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TOPAZ.id + chance);
+		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TOPAZ.id + chance);
 
 		// This generates all of them with the same chance as diamond ore.
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TOPAZ.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TANZANITE.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_SAPPHIRE.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_RUBY.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_PERIDOT.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_MALACHITE.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_EMERALD.id);
-		decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_AMBER.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TOPAZ.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_TANZANITE.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_SAPPHIRE.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_RUBY.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_PERIDOT.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_MALACHITE.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_EMERALD.id);
+		//decorateOreA(rand, oreHeightModifier, gems_y_range, x, minY, z, gems_number, Blocks.ORE_AMBER.id);
 
 	}
 }

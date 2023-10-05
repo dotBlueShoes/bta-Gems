@@ -6,6 +6,60 @@ import turniplabs.halplibe.helper.RecipeHelper;
 
 public class Recipes {
 
+	final static String[] RECIPE_AXE = {
+		" AA",
+		" BA",
+		" B "
+	};
+
+	final static String[] RECIPE_HOE = {
+		" AA",
+		" B ",
+		" B "
+	};
+
+	final static String[] RECIPE_PICKAXE = {
+		"AAA",
+		" B ",
+		" B "
+	};
+
+	final static String[] RECIPE_SHOVEL = {
+		" A ",
+		" B ",
+		" B "
+	};
+
+	final static String[] RECIPE_SWORD = {
+		" A ",
+		" A ",
+		" B "
+	};
+
+	final static String[] RECIPE_HELMET = {
+		"AAA",
+		"A A",
+		"   "
+	};
+
+	final static String[] RECIPE_CHESTPLATE = {
+		"A A",
+		"AAA",
+		"AAA"
+	};
+
+	final static String[] RECIPE_LEGGINGS = {
+		"AAA",
+		"A A",
+		"A A"
+	};
+
+	final static String[] RECIPE_BOOTS = {
+		"   ",
+		"A A",
+		"A A"
+	};
+
 	public static void initializeCraftingRecipes() {
 
 		RecipeHelper.Crafting.createShapelessRecipe(new ItemStack(Items.GEM_WHOLE_BLACK_DIAMOND, 1), new Object[]{
@@ -113,6 +167,464 @@ public class Recipes {
 		RecipeHelper.Crafting.createShapelessRecipe(new ItemStack(Items.GEM_NORMAL_BLACK_DIAMOND, 1), new Object[]{Items.GEM_TINY_BLACK_DIAMOND, Items.GEM_TINY_BLACK_DIAMOND, Items.GEM_TINY_BLACK_DIAMOND});
 		RecipeHelper.Crafting.createShapelessRecipe(new ItemStack(Items.GEM_TINY_BLACK_DIAMOND, 3), new Object[]{Items.GEM_NORMAL_BLACK_DIAMOND});
 
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_AMBER_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_AMBER,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_EMERALD_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_EMERALD,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_RUBY_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_RUBY,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_PERIDOT_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_PERIDOT,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_MALACHITE_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_MALACHITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_SAPPHIRE_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_SAPPHIRE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TANZANITE_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_TANZANITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TOPAZ_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_TOPAZ,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_BLACK_DIAMOND_AXE, 1), new Object[]{
+			RECIPE_AXE,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND,
+			'B', Item.stick
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_AMBER_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_AMBER,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_EMERALD_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_EMERALD,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_RUBY_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_RUBY,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_PERIDOT_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_PERIDOT,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_MALACHITE_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_MALACHITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_SAPPHIRE_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_SAPPHIRE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TANZANITE_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_TANZANITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TOPAZ_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_TOPAZ,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_BLACK_DIAMOND_HOE, 1), new Object[]{
+			RECIPE_HOE,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND,
+			'B', Item.stick
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_AMBER_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_AMBER,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_EMERALD_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_EMERALD,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_RUBY_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_RUBY,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_PERIDOT_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_PERIDOT,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_MALACHITE_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_MALACHITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_SAPPHIRE_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_SAPPHIRE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TANZANITE_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_TANZANITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TOPAZ_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_TOPAZ,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_BLACK_DIAMOND_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND,
+			'B', Item.stick
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_AMBER_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_AMBER,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_EMERALD_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_EMERALD,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_RUBY_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_RUBY,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_PERIDOT_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_PERIDOT,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_MALACHITE_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_MALACHITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_SAPPHIRE_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_SAPPHIRE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TANZANITE_PICKAXE, 1), new Object[]{
+			RECIPE_PICKAXE,
+			'A', Items.GEM_WHOLE_TANZANITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TOPAZ_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_TOPAZ,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_BLACK_DIAMOND_SHOVEL, 1), new Object[]{
+			RECIPE_SHOVEL,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND,
+			'B', Item.stick
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_AMBER_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_AMBER,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_EMERALD_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_EMERALD,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_RUBY_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_RUBY,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_PERIDOT_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_PERIDOT,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_MALACHITE_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_MALACHITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_SAPPHIRE_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_SAPPHIRE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TANZANITE_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_TANZANITE,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_TOPAZ_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_TOPAZ,
+			'B', Item.stick
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.GEM_BLACK_DIAMOND_SWORD, 1), new Object[]{
+			RECIPE_SWORD,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND,
+			'B', Item.stick
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_AMBER_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_AMBER
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_EMERALD_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_EMERALD
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_RUBY_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_RUBY
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_PERIDOT_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_PERIDOT
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_MALACHITE_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_MALACHITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_SAPPHIRE_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_SAPPHIRE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TANZANITE_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_TANZANITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TOPAZ_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_TOPAZ
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_BLACK_DIAMOND_HELMET, 1), new Object[]{
+			RECIPE_HELMET,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_AMBER_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_AMBER
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_EMERALD_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_EMERALD
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_RUBY_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_RUBY
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_PERIDOT_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_PERIDOT
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_MALACHITE_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_MALACHITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_SAPPHIRE_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_SAPPHIRE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TANZANITE_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_TANZANITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TOPAZ_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_TOPAZ
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_BLACK_DIAMOND_CHESTPLATE, 1), new Object[]{
+			RECIPE_CHESTPLATE,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_AMBER_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_AMBER
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_EMERALD_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_EMERALD
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_RUBY_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_RUBY
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_PERIDOT_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_PERIDOT
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_MALACHITE_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_MALACHITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_SAPPHIRE_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_SAPPHIRE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TANZANITE_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_TANZANITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TOPAZ_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_TOPAZ
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_BLACK_DIAMOND_LEGGINGS, 1), new Object[]{
+			RECIPE_LEGGINGS,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND
+		});
+
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_AMBER_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_AMBER
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_EMERALD_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_EMERALD
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_RUBY_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_RUBY
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_PERIDOT_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_PERIDOT
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_MALACHITE_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_MALACHITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_SAPPHIRE_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_SAPPHIRE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TANZANITE_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_TANZANITE
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_TOPAZ_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_TOPAZ
+		});
+
+		RecipeHelper.Crafting.createRecipe(new ItemStack(Items.ARMOR_BLACK_DIAMOND_BOOTS, 1), new Object[]{
+			RECIPE_BOOTS,
+			'A', Items.GEM_WHOLE_BLACK_DIAMOND
+		});
 	}
 
 	public static void initializeSmeltingRecipes() {
