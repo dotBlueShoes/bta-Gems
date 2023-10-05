@@ -3,7 +3,11 @@ package dotBlueShoes.GemsMod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Random;
+
 public class Global {
+
+	public static Random rand = new Random();
 
 	public static final String MOD_ID = "gems_mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -50,9 +54,9 @@ public class Global {
 	public static final String S_SHOVEL = "shovel";
 	public static final String S_HOE = "hoe";
 
-	public static final String S_HELM = "helm";
+	public static final String S_HELM = "helmet";
 	public static final String S_CHESTPLATE = "chestplate";
-	public static final String S_SHOES = "shoes";
+	public static final String S_BOOTS = "boots";
 	public static final String S_LEGGINGS = "leggings";
 
 }

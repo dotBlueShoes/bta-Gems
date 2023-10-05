@@ -91,4 +91,51 @@ item.gems_mod.gem_emerald_hoe.name=Emerald Hoe
 item.gems_mod.gem_amber_hoe.name=Amber Hoe
 item.gems_mod.gem_black_diamond_hoe.name=Black Diamond Hoe
 
+item.gems_mod.gem_topaz_helmet.name=Topaz Helmet
+item.gems_mod.gem_topaz_chestplate.name=Topaz Chestplate
+item.gems_mod.gem_topaz_leggings.name=Topaz Leggings
+item.gems_mod.gem_topaz_boots.name=Topaz Boots
+
+item.gems_mod.gem_tanzanite_helmet.name=Tanzanite Helmet
+item.gems_mod.gem_tanzanite_chestplate.name=Tanzanite Chestplate
+item.gems_mod.gem_tanzanite_leggings.name=Tanzanite Leggings
+item.gems_mod.gem_tanzanite_boots.name=Tanzanite Boots
+
+item.gems_mod.gem_sapphire_helmet.name=Sapphire Helmet
+item.gems_mod.gem_sapphire_chestplate.name=Sapphire Chestplate
+item.gems_mod.gem_sapphire_leggings.name=Sapphire Leggings
+item.gems_mod.gem_sapphire_boots.name=Sapphire Boots
+
+item.gems_mod.gem_ruby_helmet.name=Ruby Helmet
+item.gems_mod.gem_ruby_chestplate.name=Ruby Chestplate
+item.gems_mod.gem_ruby_leggings.name=Ruby Leggings
+item.gems_mod.gem_ruby_boots.name=Ruby Boots
+
+item.gems_mod.gem_peridot_helmet.name=Peridot Helmet
+item.gems_mod.gem_peridot_chestplate.name=Peridot Chestplate
+item.gems_mod.gem_peridot_leggings.name=Peridot Leggings
+item.gems_mod.gem_peridot_boots.name=Peridot Boots
+
+item.gems_mod.gem_malachite_helmet.name=Malachite Helmet
+item.gems_mod.gem_malachite_chestplate.name=Malachite Chestplate
+item.gems_mod.gem_malachite_leggings.name=Malachite Leggings
+item.gems_mod.gem_malachite_boots.name=Malachite Boots
+
+item.gems_mod.gem_emerald_helmet.name=Emerald Helmet
+item.gems_mod.gem_emerald_chestplate.name=Emerald Chestplate
+item.gems_mod.gem_emerald_leggings.name=Emerald Leggings
+item.gems_mod.gem_emerald_boots.name=Emerald Boots
+
+item.gems_mod.gem_amber_helmet.name=Amber Helmet
+item.gems_mod.gem_amber_chestplate.name=Amber Chestplate
+item.gems_mod.gem_amber_leggings.name=Amber Leggings
+item.gems_mod.gem_amber_boots.name=Amber Boots
+
+item.gems_mod.gem_black_diamond_helmet.name=Black Diamond Helmet
+item.gems_mod.gem_black_diamond_chestplate.name=Black Diamond Chestplate
+item.gems_mod.gem_black_diamond_leggings.name=Black Diamond Leggings
+item.gems_mod.gem_black_diamond_boots.name=Black Diamond Boots
+
+
+
 

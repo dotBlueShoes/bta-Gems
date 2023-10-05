@@ -4,6 +4,8 @@ import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.items.*;
 import dotBlueShoes.GemsMod.utility.Registry;
 import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemArmor;
+import net.minecraft.core.item.material.ArmorMaterial;
 import net.minecraft.core.item.material.ToolMaterial;
 
 public class Items {
@@ -597,6 +599,282 @@ public class Items {
 	)   .setSpriteCoord(4, 7)
 		.setOverlayCoord(9, 7);
 
+	//public static final Item ARMOR_TOPAZ_HELMET = new ItemArmor(
+	//	Registry.GetModKey(Global.S_TOPAZ + Global.S_HELM), Registry.GetNewItemId(), ArmorMaterial.diamond, 0
+	//).setIconCoord(0, 0);
+
+	//public static final Item ARMOR_TOPAZ_CHESTPLATE = new ItemArmor(
+	//	Registry.GetModKey(Global.S_TOPAZ + Global.S_CHESTPLATE), Registry.GetNewItemId(), ArmorMaterial.diamond, 1
+	//).setIconCoord(0, 1);
+
+	//public static final Item ARMOR_TOPAZ_LEGGINGS = new ItemArmor(
+	//	Registry.GetModKey(Global.S_TOPAZ + Global.S_LEGGINGS), Registry.GetNewItemId(), ArmorMaterial.diamond, 2
+	//).setIconCoord(0, 2);
+
+	//public static final Item ARMOR_TOPAZ_BOOTS = new ItemArmor(
+	//	Registry.GetModKey(Global.S_TOPAZ + Global.S_BOOTS), Registry.GetNewItemId(), ArmorMaterial.diamond, 3
+	//).setIconCoord(0, 3);
+
+	public static final GemArmorItem ARMOR_TOPAZ_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_TOPAZ + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_TOPAZ_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_TOPAZ + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_TOPAZ_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_TOPAZ + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_TOPAZ_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_TOPAZ + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_TANZANITE_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_TANZANITE + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_TANZANITE_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_TANZANITE + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_TANZANITE_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_TANZANITE + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_TANZANITE_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_TANZANITE + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_SAPPHIRE_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_SAPPHIRE + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_SAPPHIRE_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_SAPPHIRE + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_SAPPHIRE_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_TANZANITE + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_SAPPHIRE_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_SAPPHIRE + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_RUBY_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_RUBY + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_RUBY_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_RUBY + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_RUBY_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_RUBY + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_RUBY_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_RUBY + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_PERIDOT_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_PERIDOT + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_PERIDOT_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_PERIDOT + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_PERIDOT_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_PERIDOT + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_PERIDOT_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_PERIDOT + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_MALACHITE_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_MALACHITE + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_MALACHITE_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_MALACHITE + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_MALACHITE_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_MALACHITE + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_MALACHITE_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_MALACHITE + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_EMERALD_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_EMERALD + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_EMERALD_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_EMERALD + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_EMERALD_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_EMERALD + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_EMERALD_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_EMERALD + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_AMBER_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_AMBER + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_AMBER_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_AMBER + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_AMBER_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_AMBER + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_AMBER_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_AMBER + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
+
+	public static final GemArmorItem ARMOR_BLACK_DIAMOND_HELMET = new GemArmorItem(
+		Registry.GetModKey(Global.S_BLACK_DIAMOND + Global.S_HELM), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 0,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
+	)   .setSpriteCoord(5, 7)
+		.setOverlayCoord(8, 3);
+
+	public static final GemArmorItem ARMOR_BLACK_DIAMOND_CHESTPLATE = new GemArmorItem(
+		Registry.GetModKey(Global.S_BLACK_DIAMOND + Global.S_CHESTPLATE), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 1,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
+	)   .setSpriteCoord(6, 7)
+		.setOverlayCoord(8, 4);
+
+	public static final GemArmorItem ARMOR_BLACK_DIAMOND_LEGGINGS = new GemArmorItem(
+		Registry.GetModKey(Global.S_BLACK_DIAMOND + Global.S_LEGGINGS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 2,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
+	)   .setSpriteCoord(7, 7)
+		.setOverlayCoord(8, 5);
+
+	public static final GemArmorItem ARMOR_BLACK_DIAMOND_BOOTS = new GemArmorItem(
+		Registry.GetModKey(Global.S_BLACK_DIAMOND + Global.S_BOOTS), Registry.GetNewItemId(),
+		ArmorMaterial.diamond, 3,
+		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
+	)   .setSpriteCoord(8, 7)
+		.setOverlayCoord(8, 6);
+
 	public static final Item[] ITEMS = {
 		GEM_WHOLE_TOPAZ,
 		GEM_NORMAL_TOPAZ,
@@ -627,6 +905,51 @@ public class Items {
 		GEM_WHOLE_BLACK_DIAMOND,
 		GEM_NORMAL_BLACK_DIAMOND,
 		GEM_TINY_BLACK_DIAMOND,
+
+		ARMOR_TOPAZ_HELMET,
+		ARMOR_TOPAZ_CHESTPLATE,
+		ARMOR_TOPAZ_LEGGINGS,
+		ARMOR_TOPAZ_BOOTS,
+
+		ARMOR_TANZANITE_HELMET,
+		ARMOR_TANZANITE_CHESTPLATE,
+		ARMOR_TANZANITE_LEGGINGS,
+		ARMOR_TANZANITE_BOOTS,
+
+		ARMOR_SAPPHIRE_HELMET,
+		ARMOR_SAPPHIRE_CHESTPLATE,
+		ARMOR_SAPPHIRE_LEGGINGS,
+		ARMOR_SAPPHIRE_BOOTS,
+
+		ARMOR_RUBY_HELMET,
+		ARMOR_RUBY_CHESTPLATE,
+		ARMOR_RUBY_LEGGINGS,
+		ARMOR_RUBY_BOOTS,
+
+		ARMOR_PERIDOT_HELMET,
+		ARMOR_PERIDOT_CHESTPLATE,
+		ARMOR_PERIDOT_LEGGINGS,
+		ARMOR_PERIDOT_BOOTS,
+
+		ARMOR_MALACHITE_HELMET,
+		ARMOR_MALACHITE_CHESTPLATE,
+		ARMOR_MALACHITE_LEGGINGS,
+		ARMOR_MALACHITE_BOOTS,
+
+		ARMOR_EMERALD_HELMET,
+		ARMOR_EMERALD_CHESTPLATE,
+		ARMOR_EMERALD_LEGGINGS,
+		ARMOR_EMERALD_BOOTS,
+
+		ARMOR_AMBER_HELMET,
+		ARMOR_AMBER_CHESTPLATE,
+		ARMOR_AMBER_LEGGINGS,
+		ARMOR_AMBER_BOOTS,
+
+		ARMOR_BLACK_DIAMOND_HELMET,
+		ARMOR_BLACK_DIAMOND_CHESTPLATE,
+		ARMOR_BLACK_DIAMOND_LEGGINGS,
+		ARMOR_BLACK_DIAMOND_BOOTS,
 	};
 
 
