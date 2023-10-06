@@ -1,9 +1,12 @@
 - fix armor models displaying its prob. change ArmorMaterial.diamond ...
+
 - create config_file
 - make it override diamond gen on config_file bool
 - disable gen on config_file bool
 - make it override diamond recipes on config_file bool
 - disable recipes on config_file bool
+
+- fix missing mod-dependency errors
 
 - make black diamond better...
 - make nether ore worst then diamond but better than iron switch-ro

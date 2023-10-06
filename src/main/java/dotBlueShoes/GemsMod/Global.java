@@ -1,5 +1,6 @@
 package dotBlueShoes.GemsMod;
 
+import net.minecraft.core.block.Block;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,33 +10,41 @@ public class Global {
 
 	public static Random rand = new Random();
 
+	public static int defaultStartIdentifierBlock = Block.highestBlockId;
+	public static int defaultStartIdentifierItem = 17000;
+
+	public static boolean isDisabledWorldGen = false;       // Main
+	public static boolean isOverrideDiamondWorldGen = true; // Dependant
+	public static boolean isDisabledRecipes = false;        // Main
+	public static boolean isOverrideDiamondOreDrops = true; // Dependant
+
 	public static final String MOD_ID = "gems_mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	// Colors
 
-	public static final int COLOR_TOPAZ         = 0xe55b07;//= 0xf6ab81;
-	public static final int COLOR_TANZANITE     = 0x622c99;//= 0xb085dc;
-	public static final int COLOR_SAPPHIRE      = 0x1b6996;//= 0x5ca2c4;
-	public static final int COLOR_RUBY          = 0xcb1a48;//= 0xd34c6c;
-	public static final int COLOR_PERIDOT       = 0x487415;//= 0x8fbc5c;
-	public static final int COLOR_MALACHITE     = 0x0a6a5a;//= 0x20b281;
-	public static final int COLOR_EMERALD       = 0x17dd62;//= 0xaffdcd;
-	public static final int COLOR_AMBER         = 0xde890c;//= 0xffb628;
-	public static final int COLOR_DIAMOND       = 0x20c5b5;//= 0x4aedd9;
-	public static final int COLOR_BLACK_DIAMOND = 0x545454;//= 0xafafaf;
+	public static final int COLOR_TOPAZ         = 0xDB7D43;
+	public static final int COLOR_TANZANITE     = 0x521F99;
+	public static final int COLOR_SAPPHIRE      = 0x1b6996;
+	public static final int COLOR_RUBY          = 0xC91C56;
+	public static final int COLOR_PERIDOT       = 0x487415;
+	public static final int COLOR_MALACHITE     = 0x0a6a5a;
+	public static final int COLOR_EMERALD       = 0x17dd62;
+	public static final int COLOR_AMBER         = 0xE09528;
+	public static final int COLOR_DIAMOND       = 0x20c5b5;
+	public static final int COLOR_BLACK_DIAMOND = 0x545454;
 
 	// Strings ...
 	// TOPAZ "topaz" Topaz
-	// TANZANITE "tanzanite"
-	// SAPPHIRE "sapphire"
-	// RUBY "ruby"
-	// PERIDOT "peridot"
-	// MALACHITE "malachite"
-	// EMERALD "emerald"
-	// AMBER "amber"
-	// DIAMOND "diamond"
-	// BLACK_DIAMOND "black_diamond"
+	// TANZANITE "tanzanite" Tanzanite
+	// SAPPHIRE "sapphire" Sapphire
+	// RUBY "ruby" Ruby
+	// PERIDOT "peridot" Peridot
+	// MALACHITE "malachite" Malachite
+	// EMERALD "emerald" Emerald
+	// AMBER "amber" Amber
+	// DIAMOND "diamond" Diamond
+	// BLACK_DIAMOND "black_diamond" Black Diamond
 
 	public static final String S_TOPAZ = "gem_topaz_";
 	public static final String S_TANZANITE = "gem_tanzanite_";
