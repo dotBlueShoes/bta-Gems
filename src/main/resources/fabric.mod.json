@@ -33,7 +33,10 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.13.3"
+    "fabricloader": ">=0.13.3",
+	"prismaticlibe": ">=2.1.5",
+	"halplibe": ">=2.3.1",
+	"atlas_lib": ">=0.4.6"
   },
   "suggests": {
   }
