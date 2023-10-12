@@ -673,7 +673,7 @@ public class Items {
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_SAPPHIRE_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
 		ArmorMaterials.ARMOR_MATERIAL_GEM_SAPPHIRE, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
 	)   .setSpriteCoord(7, 7)
