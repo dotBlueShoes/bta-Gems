@@ -58,7 +58,11 @@ public abstract class ChunkDecoratorOverworldMixin {
 	@Redirect( method = "decorate", at = @At(value = "INVOKE", target = "Lnet/minecraft/core/world/generate/feature/WorldFeatureOre;generate(Lnet/minecraft/core/world/World;Ljava/util/Random;III)Z", ordinal = 6))
 	public boolean diamondOreWorldFeature(WorldFeatureOre instance, World world, Random random, int x, int y, int z) {
 		int gem_type = Blocks.ORE_TOPAZ.id + random.nextInt(8);
-		if (gem_type == (Blocks.ORE_TOPAZ.id + 7)) gem_type = Block.oreDiamondStone.id;
+		if (gem_type == (Blocks.ORE_TOPAZ.id + 7)) {
+			gem_type = Block.oreDiamondStone.id;
+		} else {
+			((WorldFeatureOreAccessor) instance).setHasStoneStates(false);
+		}
 
 		((WorldFeatureOreAccessor) instance).setMinableBlockId(gem_type);
 

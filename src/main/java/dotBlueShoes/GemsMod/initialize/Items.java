@@ -3,6 +3,7 @@ package dotBlueShoes.GemsMod.initialize;
 import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.items.*;
 import dotBlueShoes.GemsMod.handlers.Registry;
+import dotBlueShoes.GemsMod.materials.ArmorMaterials;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.material.ArmorMaterial;
 import net.minecraft.core.item.material.ToolMaterial;
@@ -186,7 +187,7 @@ public class Items {
 	// SWORDS
 
 	public static final GemToolSwordItem GEM_TOPAZ_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_SWORD),
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -195,7 +196,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_TANZANITE_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_SWORD),
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -204,7 +205,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_SAPPHIRE_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_SWORD),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -213,7 +214,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_RUBY_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_SWORD),
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -222,7 +223,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_PERIDOT_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_SWORD),
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -231,7 +232,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_MALACHITE_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_SWORD),
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -240,7 +241,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_EMERALD_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_SWORD),
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -249,7 +250,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_AMBER_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_SWORD),
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -258,7 +259,7 @@ public class Items {
 		.setOverlayCoord(9, 3);
 
 	public static final GemToolSwordItem GEM_BLACK_DIAMOND_SWORD = new GemToolSwordItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_SWORD),
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_SWORD),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -269,7 +270,7 @@ public class Items {
 	// SHOVELS
 
 	public static final GemToolShovelItem GEM_TOPAZ_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -278,7 +279,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_TANZANITE_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -287,7 +288,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_SAPPHIRE_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -296,7 +297,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_RUBY_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -305,7 +306,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_PERIDOT_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -314,7 +315,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_MALACHITE_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -323,7 +324,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_EMERALD_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -332,7 +333,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_AMBER_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -341,7 +342,7 @@ public class Items {
 		.setOverlayCoord(9, 4);
 
 	public static final GemToolShovelItem GEM_BLACK_DIAMOND_SHOVEL = new GemToolShovelItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_SHOVEL),
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_SHOVEL),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -352,7 +353,7 @@ public class Items {
 	// PICKAXES
 
 	public static final GemToolPickaxeItem GEM_TOPAZ_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -361,7 +362,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_TANZANITE_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -370,7 +371,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_SAPPHIRE_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -379,7 +380,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_RUBY_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -388,7 +389,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_PERIDOT_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -397,7 +398,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_MALACHITE_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -406,7 +407,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_EMERALD_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -415,7 +416,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_AMBER_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -424,7 +425,7 @@ public class Items {
 		.setOverlayCoord(9, 5);
 
 	public static final GemToolPickaxeItem GEM_BLACK_DIAMOND_PICKAXE = new GemToolPickaxeItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_PICKAXE),
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_PICKAXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -435,7 +436,7 @@ public class Items {
 	// AXES
 
 	public static final GemToolAxeItem GEM_TOPAZ_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_AXE),
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -444,7 +445,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_TANZANITE_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_AXE),
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -453,7 +454,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_SAPPHIRE_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_AXE),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -462,7 +463,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_RUBY_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_AXE),
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -471,7 +472,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_PERIDOT_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_AXE),
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -480,7 +481,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_MALACHITE_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_AXE),
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -489,7 +490,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_EMERALD_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_AXE),
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -498,7 +499,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_AMBER_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_AXE),
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -507,7 +508,7 @@ public class Items {
 		.setOverlayCoord(9, 6);
 
 	public static final GemToolAxeItem GEM_BLACK_DIAMOND_AXE = new GemToolAxeItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_AXE),
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_AXE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -518,7 +519,7 @@ public class Items {
 	// HOES
 
 	public static final GemToolHoeItem GEM_TOPAZ_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_HOE),
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -527,7 +528,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_TANZANITE_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_HOE),
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -536,7 +537,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_SAPPHIRE_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_HOE),
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -545,7 +546,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_RUBY_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_HOE),
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -554,7 +555,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_PERIDOT_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_HOE),
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -563,7 +564,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_MALACHITE_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_HOE),
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -572,7 +573,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_EMERALD_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_HOE),
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -581,7 +582,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_AMBER_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_HOE),
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -590,7 +591,7 @@ public class Items {
 		.setOverlayCoord(9, 7);
 
 	public static final GemToolHoeItem GEM_BLACK_DIAMOND_HOE = new GemToolHoeItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_HOE),
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_HOE),
 		Registry.getNewItemId(),
 		ToolMaterial.diamond,
 		SpriteAtlases.gemsSpriteAtlas,
@@ -600,261 +601,261 @@ public class Items {
 
 
 	public static final GemArmorItem ARMOR_TOPAZ_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TOPAZ, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_TOPAZ_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TOPAZ, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_TOPAZ_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TOPAZ, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_TOPAZ_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_TOPAZ + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_TOPAZ + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TOPAZ, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TOPAZ
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_TANZANITE_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TANZANITE, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_TANZANITE_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TANZANITE, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_TANZANITE_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TANZANITE, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_TANZANITE_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_TANZANITE, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_TANZANITE
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_SAPPHIRE_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_SAPPHIRE, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_SAPPHIRE_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_SAPPHIRE, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_SAPPHIRE_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_TANZANITE + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_TANZANITE + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_SAPPHIRE, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_SAPPHIRE_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_SAPPHIRE + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_SAPPHIRE + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_SAPPHIRE, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_SAPPHIRE
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_RUBY_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_RUBY, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_RUBY_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_RUBY, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_RUBY_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_RUBY, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_RUBY_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_RUBY + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_RUBY + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_RUBY, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_RUBY
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_PERIDOT_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_PERIDOT, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_PERIDOT_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_PERIDOT, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_PERIDOT_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_PERIDOT, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_PERIDOT_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_PERIDOT + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_PERIDOT + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_PERIDOT, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_PERIDOT
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_MALACHITE_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_MALACHITE, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_MALACHITE_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_MALACHITE, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_MALACHITE_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_MALACHITE, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_MALACHITE_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_MALACHITE + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_MALACHITE + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_MALACHITE, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_MALACHITE
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_EMERALD_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_EMERALD, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_EMERALD_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_EMERALD, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_EMERALD_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_EMERALD, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_EMERALD_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_EMERALD + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_EMERALD + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_EMERALD, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_EMERALD
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_AMBER_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_AMBER, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_AMBER_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_AMBER, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_AMBER_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_AMBER, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_AMBER_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_AMBER + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_AMBER + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_AMBER, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_AMBER
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);
 
 
 	public static final GemArmorItem ARMOR_BLACK_DIAMOND_HELMET = new GemArmorItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_HELM), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 0,
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_HELM), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_BLACK_DIAMOND, 0,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
 	)   .setSpriteCoord(5, 7)
 		.setOverlayCoord(8, 3);
 
 	public static final GemArmorItem ARMOR_BLACK_DIAMOND_CHESTPLATE = new GemArmorItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_CHESTPLATE), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 1,
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_CHESTPLATE), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_BLACK_DIAMOND, 1,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
 	)   .setSpriteCoord(6, 7)
 		.setOverlayCoord(8, 4);
 
 	public static final GemArmorItem ARMOR_BLACK_DIAMOND_LEGGINGS = new GemArmorItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_LEGGINGS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 2,
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_LEGGINGS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_BLACK_DIAMOND, 2,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
 	)   .setSpriteCoord(7, 7)
 		.setOverlayCoord(8, 5);
 
 	public static final GemArmorItem ARMOR_BLACK_DIAMOND_BOOTS = new GemArmorItem(
-		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.S_BOOTS), Registry.getNewItemId(),
-		ArmorMaterial.diamond, 3,
+		Registry.getModKey(Global.S_BLACK_DIAMOND + Global.SS + Global.S_BOOTS), Registry.getNewItemId(),
+		ArmorMaterials.ARMOR_MATERIAL_GEM_BLACK_DIAMOND, 3,
 		SpriteAtlases.gemsSpriteAtlas, Global.COLOR_BLACK_DIAMOND
 	)   .setSpriteCoord(8, 7)
 		.setOverlayCoord(8, 6);

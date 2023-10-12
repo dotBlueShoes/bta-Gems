@@ -11,5 +11,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 public interface WorldFeatureOreAccessor {
 
 	@Accessor("minableBlockId")
-	public void setMinableBlockId(int newMinableBlockId);
+	void setMinableBlockId(int newMinableBlockId);
+
+	@Accessor("hasStoneStates")
+	void setHasStoneStates(boolean newHasStoneStates);
 }

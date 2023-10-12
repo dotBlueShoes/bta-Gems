@@ -39,4 +39,8 @@ public class Registry {
 		return Global.MOD_ID + "." + name;
 	}
 
+	public static String getModPath(String name) {
+		return Global.MOD_ID + "/" + name;
+	}
+
 }

@@ -1,76 +1,73 @@
 package dotBlueShoes.GemsMod.materials;
 
+import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.handlers.Registry;
 import net.minecraft.core.item.material.ArmorMaterial;
+import turniplabs.halplibe.helper.ArmorHelper;
 
 public class ArmorMaterials {
 
-	private static final int INDEX_SPECIAL = -1;
+	public static final int DEF_DURABILITY = 800;   // +50
+	public static final float DEF_COMBAT = 66.0f;   // +10
+	public static final float DEF_BLAST = 66.0f;    // +10
+	public static final float DEF_FIRE = 124.0f;    // +10
+	public static final float DEF_FALL = 66.0f;     // +10
 
-	public static final ArmorMaterial ARMOR_MATERIAL_TOPAZ = new ArmorMaterial(
-		Registry.getModKey("topaz"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_TOPAZ = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_TOPAZ),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_TANZANITE = new ArmorMaterial(
-		Registry.getModKey("tanzanite"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_TANZANITE = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_TANZANITE),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_SAPPHIRE = new ArmorMaterial(
-		Registry.getModKey("sapphire"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_SAPPHIRE = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_SAPPHIRE),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_RUBY = new ArmorMaterial(
-		Registry.getModKey("ruby"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_RUBY = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_RUBY),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_PERIDOT = new ArmorMaterial(
-		Registry.getModKey("peridot"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_PERIDOT = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_PERIDOT),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_MALACHITE = new ArmorMaterial(
-		Registry.getModKey("malachite"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_MALACHITE = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_MALACHITE),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_EMERALD = new ArmorMaterial(
-		Registry.getModKey("emerald"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_EMERALD = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_EMERALD),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_AMBER = new ArmorMaterial(
-		Registry.getModKey("amber"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_AMBER = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_AMBER),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
-	public static final ArmorMaterial ARMOR_MATERIAL_BLACK_DIAMOND = new ArmorMaterial(
-		Registry.getModKey("black_diamond"),
-		INDEX_SPECIAL,
-		800
+	public static final ArmorMaterial ARMOR_MATERIAL_GEM_BLACK_DIAMOND = ArmorHelper.createArmorMaterial(
+		Registry.getModPath(Global.S_BLACK_DIAMOND),
+		800, 66.0f, 66.0f, 124.0f, 66.0f
 	);
 
 	public static final ArmorMaterial[] ARMOR_MATERIALS = {
-		ARMOR_MATERIAL_TOPAZ,
-		ARMOR_MATERIAL_TANZANITE,
-		ARMOR_MATERIAL_SAPPHIRE,
-		ARMOR_MATERIAL_RUBY,
-		ARMOR_MATERIAL_PERIDOT,
-		ARMOR_MATERIAL_MALACHITE,
-		ARMOR_MATERIAL_EMERALD,
-		ARMOR_MATERIAL_AMBER,
-		ARMOR_MATERIAL_BLACK_DIAMOND,
+		ARMOR_MATERIAL_GEM_TOPAZ,
+		ARMOR_MATERIAL_GEM_TANZANITE,
+		ARMOR_MATERIAL_GEM_SAPPHIRE,
+		ARMOR_MATERIAL_GEM_RUBY,
+		ARMOR_MATERIAL_GEM_PERIDOT,
+		ARMOR_MATERIAL_GEM_MALACHITE,
+		ARMOR_MATERIAL_GEM_EMERALD,
+		ARMOR_MATERIAL_GEM_AMBER,
+		ARMOR_MATERIAL_GEM_BLACK_DIAMOND,
 	};
 
 }
