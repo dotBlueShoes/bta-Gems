@@ -10,3 +10,8 @@
 like chunk, water, sky - weird rotation bug, wrong texture render bug )
 
 - clear project off blocks rendering
+
+- new textures for stone variants
+- lang for stone variants
+- recipes(smelting) for stone variants
+- gen for stone variants

@@ -59,6 +59,13 @@ public class Global {
 	public static final String S_DIAMOND = "gem_diamond";
 	public static final String S_BLACK_DIAMOND = "gem_black_diamond";
 
+	public static final String S_ORE = "ore";
+
+	public static final String S_STONE = "stone";
+	public static final String S_BASALT = "basalt";
+	public static final String S_LIMESTONE = "limestone";
+	public static final String S_GRANITE = "granite";
+
 	public static final String S_SWORD = "sword";
 	public static final String S_AXE = "axe";
 	public static final String S_PICKAXE = "pickaxe";

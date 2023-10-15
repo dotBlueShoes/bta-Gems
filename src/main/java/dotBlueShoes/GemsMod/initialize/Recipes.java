@@ -628,26 +628,74 @@ public class Recipes {
 	}
 
 	public static void initializeSmeltingRecipes() {
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE);
-		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_STONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_BASALT);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_LIMESTONE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_GRANITE);
+		RecipeHelper.Smelting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_GRANITE);
 		// NO DIAMOND
 	}
 
 	public static void initializeBlastingRecipes() {
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE);
-		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_STONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_BASALT);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_LIMESTONE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_AMBER, Blocks.ORE_AMBER_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_EMERALD, Blocks.ORE_EMERALD_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_RUBY, Blocks.ORE_RUBY_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_PERIDOT, Blocks.ORE_PERIDOT_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_MALACHITE, Blocks.ORE_MALACHITE_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_SAPPHIRE, Blocks.ORE_SAPPHIRE_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TANZANITE, Blocks.ORE_TANZANITE_GRANITE);
+		RecipeHelper.Blasting.createRecipe(Items.GEM_WHOLE_TOPAZ, Blocks.ORE_TOPAZ_GRANITE);
 		// NO DIAMOND
 	}
 

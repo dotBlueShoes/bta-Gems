@@ -32,14 +32,41 @@ item.gems_mod.gem_whole_black_diamond.name=Whole Black Diamond
 item.gems_mod.gem_normal_black_diamond.name=Black Diamond
 item.gems_mod.gem_tiny_black_diamond.name=Tiny Black Diamond
 
-tile.gems_mod.ore_topaz.name=Topaz Ore
-tile.gems_mod.ore_tanzanite.name=Tanzanite Ore
-tile.gems_mod.ore_sapphire.name=Sapphire Ore
-tile.gems_mod.ore_ruby.name=Ruby Ore
-tile.gems_mod.ore_peridot.name=Peridot Ore
-tile.gems_mod.ore_malachite.name=Malachite Ore
-tile.gems_mod.ore_emerald.name=Emerald Ore
-tile.gems_mod.ore_amber.name=Amber Ore
+tile.gems_mod.ore.gem_topaz.stone.name=Stone Topaz Ore
+tile.gems_mod.ore.gem_tanzanite.stone.name=Stone Tanzanite Ore
+tile.gems_mod.ore.gem_sapphire.stone.name=Stone Sapphire Ore
+tile.gems_mod.ore.gem_ruby.stone.name=Stone Ruby Ore
+tile.gems_mod.ore.gem_peridot.stone.name=Stone Peridot Ore
+tile.gems_mod.ore.gem_malachite.stone.name=Stone Malachite Ore
+tile.gems_mod.ore.gem_emerald.stone.name=Stone Emerald Ore
+tile.gems_mod.ore.gem_amber.stone.name=Stone Amber Ore
+
+tile.gems_mod.ore.gem_topaz.basalt.name=Basalt Topaz Ore
+tile.gems_mod.ore.gem_tanzanite.basalt.name=Basalt Tanzanite Ore
+tile.gems_mod.ore.gem_sapphire.basalt.name=Basalt Sapphire Ore
+tile.gems_mod.ore.gem_ruby.basalt.name=Basalt Ruby Ore
+tile.gems_mod.ore.gem_peridot.basalt.name=Basalt Peridot Ore
+tile.gems_mod.ore.gem_malachite.basalt.name=Basalt Malachite Ore
+tile.gems_mod.ore.gem_emerald.basalt.name=Basalt Emerald Ore
+tile.gems_mod.ore.gem_amber.basalt.name=Basalt Amber Ore
+
+tile.gems_mod.ore.gem_topaz.limestone.name=Limestone Topaz Ore
+tile.gems_mod.ore.gem_tanzanite.limestone.name=Limestone Tanzanite Ore
+tile.gems_mod.ore.gem_sapphire.limestone.name=Limestone Sapphire Ore
+tile.gems_mod.ore.gem_ruby.limestone.name=Limestone Ruby Ore
+tile.gems_mod.ore.gem_peridot.limestone.name=Limestone Peridot Ore
+tile.gems_mod.ore.gem_malachite.limestone.name=Limestone Malachite Ore
+tile.gems_mod.ore.gem_emerald.limestone.name=Limestone Emerald Ore
+tile.gems_mod.ore.gem_amber.limestone.name=Limestone Amber Ore
+
+tile.gems_mod.ore.gem_topaz.granite.name=Granite Topaz Ore
+tile.gems_mod.ore.gem_tanzanite.granite.name=Granite Tanzanite Ore
+tile.gems_mod.ore.gem_sapphire.granite.name=Granite Sapphire Ore
+tile.gems_mod.ore.gem_ruby.granite.name=Granite Ruby Ore
+tile.gems_mod.ore.gem_peridot.granite.name=Granite Peridot Ore
+tile.gems_mod.ore.gem_malachite.granite.name=Granite Malachite Ore
+tile.gems_mod.ore.gem_emerald.granite.name=Granite Emerald Ore
+tile.gems_mod.ore.gem_amber.granite.name=Granite Amber Ore
 
 item.gems_mod.gem_topaz_sword.name=Topaz Sword
 item.gems_mod.gem_tanzanite_sword.name=Tanzanite Sword
