@@ -1,4 +1,4 @@
-package dotBlueShoes.GemsMod.mixin.mixins;
+package dotBlueShoes.GemsMod.mixin.accessors;
 
 import net.minecraft.core.world.generate.feature.WorldFeatureOre;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,12 @@ public interface WorldFeatureOreAccessor {
 
 	@Accessor("minableBlockId")
 	void setMinableBlockId(int newMinableBlockId);
+
+	@Accessor("numberOfBlocks")
+	void setNumberOfBlocks(int newNumberOfBlocks);
+
+	@Accessor("numberOfBlocks")
+	int getNumberOfBlocks();
 
 	@Accessor("hasStoneStates")
 	void setHasStoneStates(boolean newHasStoneStates);

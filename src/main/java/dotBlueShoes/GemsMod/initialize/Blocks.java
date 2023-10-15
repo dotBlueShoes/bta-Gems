@@ -402,7 +402,19 @@ public class Blocks {
 			new Item[] { Items.GEM_WHOLE_AMBER, Items.GEM_NORMAL_AMBER, Items.GEM_TINY_AMBER }
 		));
 
-	public static final int GEM_ORE_BLOCKS = 8;
+	//public static final Block ORE_DIAMOND_GRANITE = new BlockBuilder(Global.MOD_ID)
+	//	.setHardness(3.0f)
+	//	.setResistance(5.0f)
+	//	.setTextures(Global.S_ORE + Global.SS + Global.S_AMBER + Global.SS + Global.S_GRANITE + ".png")
+	//	.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+	//	.build(new GemOreBlock(
+	//		Registry.getModKey(Global.S_ORE + "." + Global.S_AMBER + "." + Global.S_GRANITE),
+	//		410,
+	//		Material.stone,
+	//		new Item[] { Items.GEM_WHOLE_AMBER, Items.GEM_NORMAL_AMBER, Items.GEM_TINY_AMBER }
+	//	));
+
+	public static final int GEM_ORE_BLOCKS = 9;
 	public static final int GEM_ORE_BLOCK_ITERATOR = 4;
 
 	public static final Block[] ORE_BLOCKS = {

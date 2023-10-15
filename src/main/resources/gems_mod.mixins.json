@@ -1,11 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dotBlueShoes.GemsMod.mixin.mixins",
+  "package": "dotBlueShoes.GemsMod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-	"ChunkDecoratorOverworldMixin",
-	"WorldFeatureOreAccessor"
+	"accessors.WorldFeatureOreAccessor",
+	"mixins.BlockOreDiamondMixin",
+	"mixins.ChunkDecoratorOverworldMixin"
   ],
   "client": [
   ],

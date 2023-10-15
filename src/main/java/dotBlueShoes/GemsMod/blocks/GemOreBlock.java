@@ -14,9 +14,9 @@ public class GemOreBlock extends Block {
 
 	private final Item[] breakResult;
 
-	private final static int MIN_WHOLE = 0;
-	private final static int MIN_NORMAL = 1;
-	private final static int MIN_TINY = 1;
+	public final static int MIN_WHOLE = 0;
+	public final static int MIN_NORMAL = 1;
+	public final static int MIN_TINY = 1;
 
 	public GemOreBlock(String key, int id, Material material, Item[] breakResult) {
 		super(key, id, material);

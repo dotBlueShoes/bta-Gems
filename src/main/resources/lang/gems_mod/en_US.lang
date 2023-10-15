@@ -1,7 +1,3 @@
-tile.gems_mod.example_block.name=Example Block
-item.gems_mod.example_item.name=Example Item
-item.gems_mod.example_item.desc=Example Item description.
-
 item.gems_mod.gem_whole_topaz.name=Whole Topaz
 item.gems_mod.gem_normal_topaz.name=Topaz
 item.gems_mod.gem_tiny_topaz.name=Tiny Topaz
@@ -162,6 +158,168 @@ item.gems_mod.gem_black_diamond_helmet.name=Black Diamond Helmet
 item.gems_mod.gem_black_diamond_chestplate.name=Black Diamond Chestplate
 item.gems_mod.gem_black_diamond_leggings.name=Black Diamond Leggings
 item.gems_mod.gem_black_diamond_boots.name=Black Diamond Boots
+
+
+item.gems_mod.gem_whole_topaz.desc=Looking for a cool description.
+item.gems_mod.gem_normal_topaz.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_topaz.desc=Looking for a cool description.
+item.gems_mod.gem_whole_tanzanite.desc=Looking for a cool description.
+item.gems_mod.gem_normal_tanzanite.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_tanzanite.desc=Looking for a cool description.
+item.gems_mod.gem_whole_sapphire.desc=Looking for a cool description.
+item.gems_mod.gem_normal_sapphire.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_sapphire.desc=Looking for a cool description.
+item.gems_mod.gem_whole_ruby.desc=Looking for a cool description.
+item.gems_mod.gem_normal_ruby.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_ruby.desc=Looking for a cool description.
+item.gems_mod.gem_whole_peridot.desc=Looking for a cool description.
+item.gems_mod.gem_normal_peridot.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_peridot.desc=Looking for a cool description.
+item.gems_mod.gem_whole_malachite.desc=Looking for a cool description.
+item.gems_mod.gem_normal_malachite.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_malachite.desc=Looking for a cool description.
+item.gems_mod.gem_whole_emerald.desc=Looking for a cool description.
+item.gems_mod.gem_normal_emerald.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_emerald.desc=Looking for a cool description.
+item.gems_mod.gem_whole_amber.desc=Looking for a cool description.
+item.gems_mod.gem_normal_amber.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_amber.desc=Looking for a cool description.
+item.gems_mod.gem_normal_diamond.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_diamond.desc=Looking for a cool description.
+item.gems_mod.gem_whole_black_diamond.desc=Looking for a cool description.
+item.gems_mod.gem_normal_black_diamond.desc=Looking for a cool description.
+item.gems_mod.gem_tiny_black_diamond.desc=Looking for a cool description.
+
+tile.gems_mod.ore.gem_topaz.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_tanzanite.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_sapphire.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_ruby.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_peridot.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_malachite.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_emerald.stone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_amber.stone.desc=Looking for a cool description.
+
+tile.gems_mod.ore.gem_topaz.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_tanzanite.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_sapphire.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_ruby.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_peridot.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_malachite.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_emerald.basalt.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_amber.basalt.desc=Looking for a cool description.
+
+tile.gems_mod.ore.gem_topaz.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_tanzanite.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_sapphire.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_ruby.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_peridot.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_malachite.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_emerald.limestone.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_amber.limestone.desc=Looking for a cool description.
+
+tile.gems_mod.ore.gem_topaz.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_tanzanite.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_sapphire.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_ruby.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_peridot.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_malachite.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_emerald.granite.desc=Looking for a cool description.
+tile.gems_mod.ore.gem_amber.granite.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_sword.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_sword.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_sword.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_sword.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_sword.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_sword.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_sword.desc=Looking for a cool description.
+item.gems_mod.gem_amber_sword.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_sword.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_amber_shovel.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_shovel.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_amber_pickaxe.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_pickaxe.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_axe.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_axe.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_axe.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_axe.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_axe.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_axe.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_axe.desc=Looking for a cool description.
+item.gems_mod.gem_amber_axe.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_axe.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_amber_hoe.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_hoe.desc=Looking for a cool description.
+
+item.gems_mod.gem_topaz_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_topaz_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_topaz_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_topaz_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_tanzanite_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_tanzanite_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_sapphire_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_sapphire_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_ruby_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_ruby_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_peridot_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_peridot_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_malachite_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_malachite_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_emerald_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_emerald_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_amber_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_amber_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_amber_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_amber_boots.desc=Looking for a cool description.
+
+item.gems_mod.gem_black_diamond_helmet.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_chestplate.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_leggings.desc=Looking for a cool description.
+item.gems_mod.gem_black_diamond_boots.desc=Looking for a cool description.
 
 
 

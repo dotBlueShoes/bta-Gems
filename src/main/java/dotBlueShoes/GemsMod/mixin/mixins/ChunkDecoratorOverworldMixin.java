@@ -1,6 +1,7 @@
 package dotBlueShoes.GemsMod.mixin.mixins;
 
 import dotBlueShoes.GemsMod.initialize.Blocks;
+import dotBlueShoes.GemsMod.mixin.accessors.WorldFeatureOreAccessor;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.world.World;
 import net.minecraft.core.world.generate.chunk.perlin.overworld.ChunkDecoratorOverworld;
@@ -55,16 +56,23 @@ public abstract class ChunkDecoratorOverworldMixin {
 		}
 	}
 
-	@Redirect( method = "decorate", at = @At(value = "INVOKE", target = "Lnet/minecraft/core/world/generate/feature/WorldFeatureOre;generate(Lnet/minecraft/core/world/World;Ljava/util/Random;III)Z", ordinal = 6))
-	public boolean diamondOreWorldFeature(WorldFeatureOre instance, World world, Random random, int x, int y, int z) {
-		int gem_type = random.nextInt(Blocks.GEM_ORE_BLOCKS) * Blocks.GEM_ORE_BLOCK_ITERATOR; // 0-7 * 4 (0, 1, 2, 3), (4, 5, 6, 7)
+	// Detect diamond ore range which is (32, 33, 34, 35)
+	public boolean isDiamondRange(final int gem_type) {
+		return gem_type >= (Blocks.GEM_ORE_BLOCKS - 1);
+	}
 
-		// Detect diamond ore range which is (28, 29, 30, 31)
-		if (gem_type > (Blocks.GEM_ORE_BLOCKS - 1) * Blocks.GEM_ORE_BLOCK_ITERATOR) {
+	@Redirect( method = "decorate", at = @At(value = "INVOKE", target = "Lnet/minecraft/core/world/generate/feature/WorldFeatureOre;generate(Lnet/minecraft/core/world/World;Ljava/util/Random;III)Z", ordinal = 6))
+	public boolean diamondWorldFeatureOreGenerate(WorldFeatureOre instance, World world, Random random, int x, int y, int z) {
+		int gem_type = random.nextInt(Blocks.GEM_ORE_BLOCKS);
+
+		if (this.isDiamondRange(gem_type)) {
 			gem_type = Block.oreDiamondStone.id;
+		} else {
+			// 0-8 * 4 (0, 1, 2, 3), (4, 5, 6, 7) = 0, 4, 8, 12, 16, 20, 24, 28, 32-35
+			gem_type = Blocks.ORE_TOPAZ_STONE.id + (gem_type * Blocks.GEM_ORE_BLOCK_ITERATOR);
 		}
 
-		((WorldFeatureOreAccessor) instance).setMinableBlockId(Blocks.ORE_TOPAZ_STONE.id + gem_type);
+		((WorldFeatureOreAccessor) instance).setMinableBlockId(gem_type);
 
 		return instance.generate(world, random, x, y, z);
 	}
