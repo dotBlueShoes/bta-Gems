@@ -10,6 +10,6 @@ Mod is heavily inspired and uses in some degree textures from mod "Biomes 'O Ple
 
 ## Dependencies
 
-- (HalpLibe)[https://github.com/Turnip-Labs/bta-halplibe]
-- (AtlasLib)[https://github.com/dotBlueShoes/bta-AtlasLib]
-- (PrismaticLibe)[https://github.com/UselessBullets/BTA_Babric_PrismaticLibe]
+- [HalpLibe](https://github.com/Turnip-Labs/bta-halplibe)
+- [AtlasLib](https://github.com/dotBlueShoes/bta-AtlasLib)
+- [PrismaticLibe](https://github.com/UselessBullets/BTA_Babric_PrismaticLibe)
