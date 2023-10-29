@@ -14,6 +14,7 @@ like chunk, water, sky - weird rotation bug, wrong texture render bug )
 
 - clear project off blocks rendering.
 
+- add full blocks for each gem like Diamond Block.
 - replace sample descriptions
 - redo armor textures
 - redo gem textures
