@@ -1,6 +1,7 @@
 package dotBlueShoes.GemsMod.blocks;
 
 import dotBlueShoes.GemsMod.Global;
+import dotBlueShoes.GemsMod.handlers.BreakResult;
 import dotBlueShoes.atlas_lib.utility.SpriteAtlas;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.entity.TileEntity;
@@ -14,10 +15,6 @@ public class GemOreBlock extends Block {
 
 	private final Item[] breakResult;
 
-	public final static int MIN_WHOLE = 0;
-	public final static int MIN_NORMAL = 1;
-	public final static int MIN_TINY = 1;
-
 	public GemOreBlock(String key, int id, Material material, Item[] breakResult) {
 		super(key, id, material);
 		this.breakResult = breakResult;
@@ -30,11 +27,7 @@ public class GemOreBlock extends Block {
 			case PICK_BLOCK:
 				return new ItemStack[]{new ItemStack(this)};
 			case PROPER_TOOL:
-				return new ItemStack[]{
-					new ItemStack(breakResult[0], MIN_WHOLE + Global.rand.nextInt(2)),
-					new ItemStack(breakResult[1], MIN_NORMAL + Global.rand.nextInt(2)),
-					new ItemStack(breakResult[2], MIN_TINY + Global.rand.nextInt(4)),
-				};
+				return BreakResult.GetPoolsBreakResult(breakResult);
 			default:
 				return null;
 		}

@@ -95,7 +95,7 @@ public class ArmorMaterials {
 
 	public static final ArmorMaterial ARMOR_MATERIAL_GEM_BLACK_DIAMOND = ArmorHelper.createArmorMaterial(
 		Registry.getModPath(Global.S_BLACK_DIAMOND),
-		DEF_DURABILITY * 2,
+		(DEF_DURABILITY * 2) + 256,
 		DEF_COMBAT + (6 * S2),
 		DEF_BLAST + (2 * S3),
 		DEF_FIRE + (2 * S4),

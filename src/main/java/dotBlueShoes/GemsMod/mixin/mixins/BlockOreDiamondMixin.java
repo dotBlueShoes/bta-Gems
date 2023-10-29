@@ -2,6 +2,7 @@ package dotBlueShoes.GemsMod.mixin.mixins;
 
 import dotBlueShoes.GemsMod.Global;
 import dotBlueShoes.GemsMod.blocks.GemOreBlock;
+import dotBlueShoes.GemsMod.handlers.BreakResult;
 import dotBlueShoes.GemsMod.initialize.Items;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockOreDiamond;
@@ -39,11 +40,7 @@ public abstract class BlockOreDiamondMixin extends Block {
 			case PICK_BLOCK:
 				return new ItemStack[]{new ItemStack((BlockOreDiamond)(Object)this)};
 			case PROPER_TOOL:
-				return new ItemStack[]{
-					new ItemStack(Item.diamond, GemOreBlock.MIN_WHOLE + Global.rand.nextInt(2)),
-					new ItemStack(Items.GEM_NORMAL_DIAMOND, GemOreBlock.MIN_NORMAL + Global.rand.nextInt(2)),
-					new ItemStack(Items.GEM_TINY_DIAMOND, GemOreBlock.MIN_TINY + Global.rand.nextInt(3)),
-				};
+				return BreakResult.GetPoolsBreakResult(new Item[] {Item.diamond, Items.GEM_NORMAL_DIAMOND, Items.GEM_TINY_DIAMOND});
 			default:
 				return null;
 		}

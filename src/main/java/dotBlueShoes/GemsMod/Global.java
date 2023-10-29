@@ -32,7 +32,7 @@ public class Global {
 	public static final int COLOR_EMERALD       = 0x17dd62; // 0d6e32
 	public static final int COLOR_AMBER         = 0xE09528; // 8b580e
 	public static final int COLOR_DIAMOND       = 0x20c5b5;
-	public static final int COLOR_BLACK_DIAMOND = 0x545454; // 292929
+	public static final int COLOR_BLACK_DIAMOND = 0x323232; // (prev 545454)
 
 	// Strings ...
 	// TOPAZ "topaz" Topaz

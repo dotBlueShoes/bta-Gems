@@ -12,6 +12,9 @@
 - test it again ! (there might be a bug with different texture being loaded somewhere before important renders 
 like chunk, water, sky - weird rotation bug, wrong texture render bug )
 
-- lower gem ore drop chances. 
 - clear project off blocks rendering.
-- mod might be overwriting wrong ore_gen decorator when using cave "uberhaul".
+
+- replace sample descriptions
+- redo armor textures
+- redo gem textures
+- make a texture pack for testing purposes
