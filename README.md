@@ -8,6 +8,8 @@ Gem ores will drop gems in 3 forms: tiny, normal or whole, creating a spectacula
 
 Mod is heavily inspired and uses in some degree textures from mod "Biomes 'O Plenty".
 
+[Outdated showcase](https://www.youtube.com/watch?v=pnNFS3MmbqI)
+
 ## Dependencies
 
 - [HalpLibe](https://github.com/Turnip-Labs/bta-halplibe) >=[2.3.1](https://github.com/Turnip-Labs/bta-halplibe/releases/tag/2.3.1)
